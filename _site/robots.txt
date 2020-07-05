@@ -1,1 +1,1 @@
-Sitemap: /home/sitemap.xml
+Sitemap: https://manfredimiraula.com/home/sitemap.xml
