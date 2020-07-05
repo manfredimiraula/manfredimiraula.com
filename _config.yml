@@ -2,7 +2,7 @@ title: datascience, visualizations, training, and learning
 description: > # this means to ignore newlines until "baseurl:"
   Scientist, data scientist, blogger, trainer, learner, journey
 permalink: ':title'
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfredimiraula.com" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
