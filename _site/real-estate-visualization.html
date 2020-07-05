@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Visualize Real Estate Market trends in Ireland - datascience, visualizations, training, and learning</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="datascience, visualizations, training, and learning" property="og:site_name">
+  
+    <meta content="Visualize Real Estate Market trends in Ireland" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Naive approach to visualization using Matplotlib, plotly and bokeh" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/real-estate-visualization" property="og:url">
+  
+  
+    <meta content="2020-04-14T09:45:00+01:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/home/assets/img/2020-04-14-real-estate-visualization/header.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Programming" property="article:tag">
+    
+    <meta content="Learn" property="article:tag">
+    
+    <meta content="data science" property="article:tag">
+    
+    <meta content="data visualization" property="article:tag">
+    
+    <meta content="visualization" property="article:tag">
+    
+    <meta content="investment" property="article:tag">
+    
+    <meta content="real estate" property="article:tag">
+    
+    <meta content="bokeh" property="article:tag">
+    
+    <meta content="plotly" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@manfredimiraula">
+  
+    <meta name="twitter:title" content="Visualize Real Estate Market trends in Ireland">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/real-estate-visualization">
+  
+  
+    <meta name="twitter:description" content="Naive approach to visualization using Matplotlib, plotly and bokeh">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/home/assets/img/2020-04-14-real-estate-visualization/header.jpg">
+  
+
+	<meta name="description" content="Naive approach to visualization using Matplotlib, plotly and bokeh">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/home/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/home/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/home/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/home/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/home/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/home/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/home/"><img src="/home/assets/img/manfredi.jpeg" alt="Manfredi Miraula"></a>
+      </div>
+      <div class="author-name">Manfredi Miraula</div>
+      <p>Scientist, data enthusiast, passionate number visualizer, learner and trainer.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/manfredimiraula" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://instagram.com/phd2datascience" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://medium.com/manfredimiraula" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/manfredimiraula" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/manfredimiraula" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:manfredi.miraula@gmail.com# add your Email address"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2020 &copy; Manfredi Miraula</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/home/assets/img/2020-04-14-real-estate-visualization/header.jpg alt="Visualize Real Estate Market trends in Ireland">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Visualize Real Estate Market trends in Ireland</h1>
+        <div class="page-date"><span>2020, Apr 14&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>COVID-19 is a great opportunity to reflect on ourselves and to dedicate time and effort to things we normally cannot do during our normal busy lives. Hence, I decided to start writing my first Data Science related blog post.</p>
+
+<p>In my first post I will cover the following content:</p>
+
+<ol>
+  <li>Pull data from a website in the form of a csv and load it into Pandas</li>
+  <li>Evaluate the data, manipulate and clean the data</li>
+  <li>Visualize major trends in the data using matlpotlib, plotly and bokeh</li>
+</ol>
+
+<h4 id="disclaimer-and-requirements">Disclaimer and requirements</h4>
+<p>Everyone needs to start somewhere. Being my first post, I am still a learner :) Please, if you have comments or suggestions leave some below!</p>
+
+<h2 id="what-are-the-irish-real-estate-market-trends">What are the Irish real estate market trends?</h2>
+
+<p>This question was something I was curious about. I recently bought a house in Dublin and I’m pretty sure that it was overpriced…! However, it is always better to evaluate your decisions and choices with data at hand.</p>
+
+<p>I discovered recently that you can access and download transaction data from the <a href="https://www.propertypriceregister.ie/">Irish registry</a>. This data is open source and it is relatively well explained. I started a mini-project to visualize the data set. I’m not sure yet if this will evolve in a full project with modelling and more complex visualization. For now, I am happy to start tinkering with the data. The goal of the analysis (you can find the full version <a href="https://github.com/manfredimiraula/portfolio/blob/master/irish-real-estate/real-estate-market-data.ipynb">here</a>) is to use different visualization libraries (matplotlib, seaborn, plotly and bokeh) to get a feel for the data. Visual EDA is one of the preliminary steps to modelling, with data cleaning.</p>
+
+<h2 id="what-is-the-yearly-transaction-distribution">What is the yearly transaction distribution?</h2>
+
+<p>The data is looking at the transactions occurred between 2010 and 2019 (I excluded the most recent 2020 data). The idea here was to evaluate the trend of the market after the financial subprime mortgage crisis occurred at the end of 2007 in the US. The financial crisis started in 2008 and from the US spreaded across the world, impacting all  financial markets.</p>
+
+<p><img src="assets/img/2020-04-14-real-estate-visualization/leinster_dist.jpg" alt="Leinster region, distribution of house prices and number of transactions" /><em>This image shows the distribution of house prices (left) and the number of transactions per year (right) in the Leinster region.</em></p>
+
+<p>The data collected here shows an interesting trend that suggest that, after 2008, the real estate market prices didn’t fall right away. Instead, the trend went down to reach the bottom 4 years after. It took another 7 years for the median prices to reach the same level they were in 2010. However, the variance of the distribution was more extreme in 2019, meaning that the prices fluctuated much more recently.</p>
+
+<p>Another interesting observation, in my opinion, is to see that the number of transactions didn’t quite slow down. Instead, we have a significant increase during the recovery of prices. This could indicate that investors that were not impacted by the crisis exploited the downflall of the median price to buy more.</p>
+
+<h2 id="summarize-the-price-trends-across-ireland-using-plotly">Summarize the price trends across Ireland using Plotly</h2>
+
+<p>I exploited plotly to summarize the trends across the Irish regions, plotting the median sales price over the years. A useful chart to use in this case where I had three variables is a Bubble chart, that allows to plot a third variable (number of transactions in this case) as the size of the bubble. This chart can help summarize the high-level trends at a glance.</p>
+
+<p><img src="assets/img/2020-04-14-real-estate-visualization/summarize.jpg" alt="High-level summary using plotly" /><em>The image shows the trends of median sales price and number of transactions over the time period considered for all the regions in Ireland</em></p>
+
+<p>It is pretty clear from the chart that Lenister recovered earlier and much faster than other regions. This makes a lot of sense. Leinster is the most populated Irish region, accounting for more than half the total size of Irish population (2.5M over the total of 4,9M). It also welcomes Dublin, which is the tech hub of Ireland (and likely Europe).</p>
+
+<p>My hypothesis is that Dublin being a tech hub, a huge chunk of its population is represented by tech employees. Tech giants such a s Google or Facebook weren’t impacted as much by the financial crisis, thus their employees could afford to buy houses at a discounted price!</p>
+
+<h2 id="a-narcisistic-visualization-without-reason-to-exist-yet">A narcisistic visualization without reason to exist (yet)</h2>
+
+<p>I wanted to finish this article with a nice Bokeh representation of Ireland and its counties. Despite not containing useful insights, I already have some ideas on how to use Bokeh to show trends using cloropleths maps. Once I have the time and focus to continue in this direction, it will make a proper badass representation of the Irish real estate market!</p>
+
+<p><img src="assets/img/2020-04-14-real-estate-visualization/ie.jpg" alt="Ireland in Bokeh" /><em>Irish counties</em></p>
+
+<p>Next, I’d love to represent price changes over shorter priod of times in a cloropleth maps like the one above. This could help summarise any seasonalities that could suggest entry points for investors.</p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Visualize Real Estate Market trends in Ireland&url=http://localhost:4000/real-estate-visualization" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/real-estate-visualization" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/real-estate-visualization" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/home/tags#Programming" class="tag">&#35; Programming</a>
+          
+            <a href="/home/tags#Learn" class="tag">&#35; Learn</a>
+          
+            <a href="/home/tags#data science" class="tag">&#35; data science</a>
+          
+            <a href="/home/tags#data visualization" class="tag">&#35; data visualization</a>
+          
+            <a href="/home/tags#visualization" class="tag">&#35; visualization</a>
+          
+            <a href="/home/tags#investment" class="tag">&#35; investment</a>
+          
+            <a href="/home/tags#real estate" class="tag">&#35; real estate</a>
+          
+            <a href="/home/tags#bokeh" class="tag">&#35; bokeh</a>
+          
+            <a href="/home/tags#plotly" class="tag">&#35; plotly</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//manfredi-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-160610044-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

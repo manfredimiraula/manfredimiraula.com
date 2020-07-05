@@ -1,0 +1,155 @@
+I"0<p>I’ve imagined this tutorial as a series of posts, to share my experience in building a static website based on Jekyll. I hope this will be helpful to help you getting started in building your own website based on Jekyll.</p>
+
+<p>In the first post I will cover the following content:</p>
+
+<ol>
+  <li>Brief Summary of what is Jekyll and what are the advantages of using it</li>
+  <li>Requirements and folder structure</li>
+  <li>Preliminary configuration of the config.yml file</li>
+  <li>Summary and next post</li>
+</ol>
+
+<h4 id="disclaimer-and-requirements">Disclaimer and requirements</h4>
+<p>This guide is based on MacOS.</p>
+
+<h2 id="what-is-jekyll-and-what-are-the-advantages-of-using-it">What is Jekyll and what are the advantages of using it</h2>
+
+<p><a href="https://jekyllrb.com/">Jekyll</a> is  a useful way to generate static websites that can then be served by webservers such as <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<p>Jekyll allow to generate beautiful websites without any prior coding knowledge. However, if someone is so inclined it is possible to extend its functionality with front-end frameworks and additional plugins to track, for instance, web views.</p>
+
+<h2 id="requirements-and--folder-structure">Requirements and  folder structure</h2>
+<p>Ok, here we go!</p>
+
+<p>Use the following commands to to move around folders, create a folder and generate a file:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>directory/folder]
+<span class="nv">$ </span><span class="nb">mkdir</span> <span class="o">[</span>folder_name]
+<span class="nv">$ </span><span class="nb">touch</span> <span class="o">[</span>file_name.ext]
+</code></pre></div></div>
+
+<p>We will need <a href="https://guides.rubygems.org/what-is-a-gem/">Ruby gems</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>. To test wether we have them installed we can run the following commands from Terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git
+</code></pre></div></div>
+<p>and</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem
+</code></pre></div></div>
+
+<p>If everything works as expected, you should see the following responses from Terminal:</p>
+
+<p><img src="/assets/img/2020-03-18-tutorial/git-response.png" alt="Git installed response" /><em>This is part of the response when git is installed</em></p>
+
+<p><img src="/assets/img/2020-03-18-tutorial/gem-response.png" alt="Gem installed response" /><em>This is part of the response when git is installed</em></p>
+
+<p>Once everything’s in place, we can start installing the basic jekyll build. To do so, run the following:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>jekyll bundler
+<span class="nv">$ </span>bundle <span class="nb">install</span> 
+<span class="nv">$ </span>jekyll new <span class="s1">'website_name'</span>
+</code></pre></div></div>
+
+<p>For the last command, you want to change the name to the folder that will contain the files to build the website. I recommend having the following strucure:</p>
+
+<ol>
+  <li>User/
+    <ol>
+      <li>website_name
+        <ol>
+          <li>website_name (this will be our working_folder)</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>Once the command has finished to run, we can see how the website looks like by running the following command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>This will create a local environment in your browser that allow us to see the changes we make to our website! Open a page in Chrome (or your favourite browser) at the address http://localhost:4000/ to see the starting version of the website.</p>
+
+<p>I know, it looks pretty bare bone and hugly but don’t worry! Will make it much more professional.</p>
+
+<h2 id="lets-start-playing-around-with-our-configyml">Let’s start playing around with our config.yml</h2>
+
+<p>For context, the config.yml file that you find in the newly created folder is a very important file and it handles the configurations of our websites. For example, the file specifies which plugins we want to have in order to add additional functionalities to our website.</p>
+
+<p>I would recommend to use a text editor from now on. My preferred editor is <a href="https://code.visualstudio.com/">Visual Studio Code</a>, but you can also use <a href="https://atom.io/">Atom</a> or any editor you like. Ok, let’s dive into our config file.</p>
+
+<p>Open the file <code class="language-plaintext highlighter-rouge">config.yml</code> and modify the following lines:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">name</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">website'</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s1">'</span><span class="s">add</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">personal/work</span><span class="nv"> </span><span class="s">email'</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Add</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">website'</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/your_website_folder'</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">add</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">future</span><span class="nv"> </span><span class="s">url</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">website'</span>
+</code></pre></div></div>
+<p>For some context, the url can be populated with a temporary place holder, if you don’t have your url hosted yet, as we won’t need the website to be live to design it.</p>
+
+<p>Now, to remove the current theme, delete the line</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+</code></pre></div></div>
+<p>This is the default theme that comes with jekyll installation. We will use our own theme.</p>
+
+<p>In the <code class="language-plaintext highlighter-rouge">gems</code> section add jekyll plugin <a href="https://github.com/postcss/autoprefixer#other-build-tools">autoprefixer</a>:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="s">jekyll-autoprefixer</span>
+</code></pre></div></div>
+
+<p>We are going to use <a href="https://sass-lang.com/">Sass</a> to add CSS functionalities to our website. Let’s add a section at the end of the <code class="language-plaintext highlighter-rouge">config.yml</code></p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sass</span><span class="pi">:</span>
+  <span class="na">sass_dir</span><span class="pi">:</span> <span class="s">_sass</span>
+</code></pre></div></div>
+
+<p>At this point, is also useful to add some prettification for future use. Have you ever notice that professional website show structured url like <code class="language-plaintext highlighter-rouge">https://my_website/about</code> ? We are going to prettify our website as well by hiding the file extension on the website page.</p>
+
+<p>In the section “Build settings” add the following line:</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">permalink</span><span class="pi">:</span> <span class="s">pretty</span>
+</code></pre></div></div>
+
+<p>Before moving to the next step, we want to start creating some custom variables, that will be useful while building the website. We can add the following variables before the “Build settings” section:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># these variable can be accessed using the format  </span>
+<span class="na">twitter_path</span><span class="pi">:</span> <span class="s">https://twitter.com/my_twitter</span>
+<span class="na">facebook_path</span><span class="pi">:</span> <span class="s">https://facebook.com/my_facebook</span>
+<span class="na">instagram_path</span><span class="pi">:</span> <span class="s">https://instagram.com/my_instagram</span>
+<span class="na">youtube_path</span><span class="pi">:</span> <span class="s">https://youtube.com/channel/my_youtube</span>
+<span class="na">github_path</span><span class="pi">:</span> <span class="s">https://github.com/my_github</span>
+</code></pre></div></div>
+<p>These variables will allow us to easily add links to our social media pages and maintain them easily by changing only the variables if needed. The changes will be propagated.</p>
+
+<h2 id="modify-the-gemfile-to-reflect-our-configyml-modifications">Modify the Gemfile to reflect our config.yml modifications</h2>
+
+<p>Now that we  modified the <code class="language-plaintext highlighter-rouge">config.yml</code> file extensively, we want to make sure that these modifications can work properly. We need to modify our <code class="language-plaintext highlighter-rouge">Gemfile</code> to match the modifications we just made.</p>
+
+<p>Remove the line</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">gem "minima", "~&gt;</span> <span class="c1">#.#"</span>
+</code></pre></div></div>
+
+<p>Add the line</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">gem "jekyll-autoprefixer"</span>
+</code></pre></div></div>
+
+<p>Save the <code class="language-plaintext highlighter-rouge">Gemfile</code>.</p>
+
+<h2 id="last-thing-before-having-our-balnk-canvas">Last thing before having our balnk canvas…</h2>
+
+<p>If we now try to reload the website in our local host you notice that nothing has changed. This is because every time we change the <code class="language-plaintext highlighter-rouge">config.yml</code>, we need to restart the local service to see the changes rendered.</p>
+
+<p>Before doing so, we want to delete the file in the <code class="language-plaintext highlighter-rouge">_posts</code> folder <code class="language-plaintext highlighter-rouge">today's date-welcome-to-jekyll.markdown</code>. If we don’t do that and try to restart the local host, we will get an error caused by the fact that we deleted the theme and thus, we won’t be able to render the post page generated by default.</p>
+
+<p>Let’s change the <code class="language-plaintext highlighter-rouge">index.md</code> to <code class="language-plaintext highlighter-rouge">index.html</code> and add the following lines to the file:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span> My Website Title <span class="nt">&lt;h1/&gt;</span>
+</code></pre></div></div>
+
+<p>Let’s restart the local server and Congrats! You already have your static Home that is ready to be designed!</p>
+
+<p><img src="/assets/img/2020-03-18-tutorial/home.png" alt="Our Home MVP!" /><em>Congrats! This is your first website Home page!</em></p>
+
+:ET
