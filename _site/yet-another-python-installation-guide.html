@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Installing Python in less than 9999 steps! - datascience, visualizations, training, and learning</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="datascience, visualizations, training, and learning" property="og:site_name">
+  
+    <meta content="Installing Python in less than 9999 steps!" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="We install Python and virtual environments, Jupyter Notebook, and we prettify iTerm. Basic tools for datascience" property="og:description">
+  
+  
+    <meta content="https://manfredimiraula.com/yet-another-python-installation-guide" property="og:url">
+  
+  
+    <meta content="2020-07-12T07:53:00+01:00" property="article:published_time">
+    <meta content="https://manfredimiraula.com/about/" property="article:author">
+  
+  
+    <meta content="https://manfredimiraula.com/assets/img/2020-07-13-yet-another-python-installation-guide/instapic.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="post" property="article:tag">
+    
+    <meta content="blog" property="article:tag">
+    
+    <meta content="phd2datascience" property="article:tag">
+    
+    <meta content="data science" property="article:tag">
+    
+    <meta content="PhD" property="article:tag">
+    
+    <meta content="python" property="article:tag">
+    
+    <meta content="jupyter notebook" property="article:tag">
+    
+    <meta content="iTerm2" property="article:tag">
+    
+    <meta content="terminal" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@manfredimiraula">
+  
+    <meta name="twitter:title" content="Installing Python in less than 9999 steps!">
+  
+  
+    <meta name="twitter:url" content="https://manfredimiraula.com/yet-another-python-installation-guide">
+  
+  
+    <meta name="twitter:description" content="We install Python and virtual environments, Jupyter Notebook, and we prettify iTerm. Basic tools for datascience">
+  
+  
+    <meta name="twitter:image:src" content="https://manfredimiraula.com/assets/img/2020-07-13-yet-another-python-installation-guide/instapic.png">
+  
+
+	<meta name="description" content="We install Python and virtual environments, Jupyter Notebook, and we prettify iTerm. Basic tools for datascience">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Google Analytics -->
+  
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/manfredi.jpeg" alt="Manfredi Miraula"></a>
+      </div>
+      <div class="author-name">Manfredi Miraula</div>
+      <p>Scientist, data enthusiast, passionate number visualizer, learner and trainer.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/manfredimiraula" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://instagram.com/phd2datascience" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://medium.com/manfredimiraula" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/manfredimiraula" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/manfredimiraula" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:manfredi.miraula@gmail.com# add your Email address"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2020 &copy; Manfredi Miraula</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/2020-07-13-yet-another-python-installation-guide/instapic.png alt="Installing Python in less than 9999 steps!">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Installing Python in less than 9999 steps!</h1>
+        <div class="page-date"><span>2020, Jul 12&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Yes, this is yet another Python installation guide. However, it is different from most as I verified the steps and it should run smoothly without errors when you have a clean OS installation. I’ve used MacOS Catalina freshly installed.</p>
+
+<p>How this is going to work? I’m going to give you the sequence of steps that you need to run to install Python, the virtual environment manager, Jupyter notebook and Oh My Zsh. Starting from a basic terminal …</p>
+
+<p><img src="assets/img/2020-07-13-yet-another-python-installation-guide/vanilla.png" alt="Vanilla iTerm" /><em>The Vanilla version of iTerm2</em></p>
+
+<p>You will obtain a poweruser terminal similar to this</p>
+
+<p><img src="assets/img/2020-07-13-yet-another-python-installation-guide/poweruser.png" alt="Poweruser iTerm" /><em>The poweruser version of iTerm2</em></p>
+
+<p>If you are more of a visual person like I am, you can follow the video tutorial shows how to change and modify iTerm.</p>
+
+<p><br /></p>
+
+<p><img src="assets/img/2020-07-13-yet-another-python-installation-guide/myface.png" alt="Clean Python installation video tutorial" /><em><a href="https://youtu.be/xrrd1aw-BXg">Video Tutorial</a></em></p>
+
+<p><br /></p>
+<hr />
+
+<h2 id="how-to-install-python-in-less-than-9999-steps">How to install python in less than 9999 steps</h2>
+
+<p>To run the commands, you can copy directly the line after the “$” into your terminal.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>xcode-select <span class="nt">--install</span>
+  <span class="nv">$ </span>ruby <span class="nt">-e</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="si">)</span><span class="s2">"</span>
+  <span class="nv">$ </span>brew <span class="nb">install </span>python
+  <span class="nv">$ </span>brew <span class="nb">install </span>pyenv
+  <span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'eval "$(pyenv init -)"'</span> <span class="o">&gt;&gt;</span> .bash_profile
+  <span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'export PYENV_ROOT="$HOME/.pyenv"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+  <span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'export PATH="$PYENV_ROOT/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+  <span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-e</span> <span class="s1">'if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval "$(pyenv init -)"\nfi'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+  <span class="nv">$ </span>brew <span class="nb">install </span>zlib sqlite
+  <span class="nv">$ </span><span class="nb">export </span><span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">"-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"</span>
+  <span class="nv">$ </span><span class="nb">export </span><span class="nv">CPPFLAGS</span><span class="o">=</span><span class="s2">"-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"</span>
+  <span class="nt">--</span> here you can choose the Python version you want to <span class="nb">install</span> 
+  <span class="nv">$ </span>pyenv <span class="nb">install </span>3.7.7 
+  <span class="nv">$ </span>pyenv global 3.7.7 
+  <span class="nv">$ </span>brew <span class="nb">install </span>pyenv-virtualenvwrapper
+  <span class="nt">--</span> no, it<span class="s1">'s not an error... keep the "$" while copying the command line
+  $ $(pyenv which python3) -m pip install virtualenvwrapper
+  $ echo '</span><span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span>~/.virtualenvs<span class="s1">' &gt;&gt; .zshrc
+  $ echo '</span><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$WORKON_HOME</span><span class="s1">' &gt;&gt; .zshrc
+  $ echo '</span><span class="nb">.</span> ~/.pyenv/versions/3.7.7/bin/virtualenvwrapper.sh<span class="s1">' &gt;&gt; .zshrc
+</span></code></pre></div></div>
+
+<h3 id="basic-virtual-environment-commands">Basic virtual environment commands</h3>
+<p>You now have a working virtual environments ready to use. To create and activate a new virtual environment:</p>
+
+<p>here change <em>[the_name_of_your_project]</em> with the name of the folder in which you want to start your project</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">mkdir</span> <span class="o">[</span>the_name_of_your_project]
+  <span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>the_name_of_your_project]
+  <span class="nv">$ </span>mkvirtualenv <span class="si">$(</span><span class="nb">basename</span> <span class="si">$(</span><span class="nb">pwd</span><span class="si">))</span>
+</code></pre></div></div>
+
+<p>The last command creates a virtual environment with the name of the folder you are in and activates it. Once you are finished use</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>deactivate 
+</code></pre></div></div>
+<p>If you want to check which environment you have create or swap between virtual environments you can use the command</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>workon
+<span class="nv">$ </span>workon <span class="o">[</span>the_name_of_my_virtual_environment]
+</code></pre></div></div>
+
+<h2 id="prettyfiyng-iterm">Prettyfiyng iTerm</h2>
+<p>iTerm is a more flexible and powerful Terminal than the one that comes out-of-the-box with MacOS. The following commands and steps will give you access to a beautiful and yet useful iTerm that hopefully will enhance your efficiency. If you want to follow the video guide, you can find this section at minute 7.25 [video link]</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew cask <span class="nb">install </span>iterm2
+<span class="nv">$ </span>brew <span class="nb">install </span>zsh zsh-completions
+<span class="nv">$ </span>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="si">)</span><span class="s2">"</span>
+<span class="nv">$ </span>git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+<span class="nv">$ </span>git clone https://github.com/zsh-users/zsh-autosuggestions <span class="nv">$ZSH_CUSTOM</span>/plugins/zsh-autosuggestions
+<span class="nv">$ </span>brew <span class="nb">install </span>zsh-syntax-highlighting
+</code></pre></div></div>
+
+<p>Visit <a href="https://iterm2colorschemes.com/">iterm2colorschemes</a> and pick your favourite colour scheme. To install</p>
+
+<p>iTerm → Preferences → Profiles → Colors → Color presets → Import → import the file you downloaded</p>
+
+<p>Color presets → the_file_you_downloaded</p>
+
+<p>Visit <a href="https://github.com/powerline/fonts">github.com/powerline/fonts</a> to choose your favourite font. I’m using “Meslo Slashed” for this tutorial. To download the file click “View Raw”.</p>
+
+<p>iTerm2 → Preferences → Profiles → Text → Change Font</p>
+
+<h3 id="configuring-iterm-plugins">Configuring iTerm plugins</h3>
+<p>To activate and configure all the plugins we installed at the beginning, we need to tinker with the configuration file. Follow the steps below to finalise the prettification!</p>
+
+<p>Open the config file via terminal</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>open ~/.zshrc
+</code></pre></div></div>
+
+<p>Add the following lines to the file</p>
+
+<ol>
+  <li>Search for the string “ZSH_THEME = …” and modify the line with “ZSH_THEME=”powerlevel9k/powerlevel9k”</li>
+  <li>Search for the string plugins = (…) and add “zsh-autosuggestions” within parenthesis</li>
+  <li>At the end of the config file add the following lines
+    <ol>
+      <li>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)</li>
+      <li>POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)</li>
+      <li>POWERLEVEL9K_PROMPT_ON_NEWLINE=true</li>
+      <li>POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=”%f”</li>
+      <li>POWERLEVEL9K_PROMPT_ADD_NEWLINE=true</li>
+      <li>POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’</li>
+    </ol>
+  </li>
+  <li>source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh</li>
+</ol>
+
+<h2 id="useful-resources">Useful resources</h2>
+
+<h3 id="xcode">xcode</h3>
+<p><a href="https://it.wikipedia.org/wiki/Xcode">Xcode</a> is a fundamental developing tool for developers on Mac. Not much to add here, it is a requirement if you want to write code on your Mac</p>
+
+<h3 id="homebrew">Homebrew</h3>
+<p><a href="https://en.wikipedia.org/wiki/Homebrew_(package_manager)">Homebrew</a> is a package manager and personally my preferred way to install packages on a Mac. Whenever I want to explore a new python tool or a new language (e.g. ruby, node, etc.) I tend to search for installations that use Homebrew because it does the heavy lifting for us.</p>
+
+<h3 id="pyenv-and-virtualenv-wrapper">Pyenv and virtualenv wrapper</h3>
+<p>Pyenv and virtualenv wrapper are two tools that work hand-in-hand to create version controlled environments for Python. By using them, we can safely initialize multiple Python environments that work independently, without impacting the MacOS Python system.</p>
+
+<p>You can learn more about Pyenv <a href="https://github.com/pyenv/pyenv/wiki">here</a>. For more information regarding <a href="https://virtualenvwrapper.readthedocs.io/en/latest/index.html">virtualenvwrapper</a> head here:</p>
+
+<h3 id="echo-commands">Echo commands</h3>
+<p><a href="http://www.linfo.org/echo.html">Echo</a> commands are used to print text output and/or write text in a file. In fact, we used this command to modify the .zshrc when we installed Python. These commands are used to set the correct PATH to our user installed Python version and link our terminal so that it knows that when we call the Python environments it needs to use the one we installed, rather than the MacOS one.</p>
+
+<h3 id="resources-for-iterm">Resources for iTerm</h3>
+<ol>
+  <li>Additional <a href="https://github.com/Powerlevel9k/powerlevel9k/wiki/Show-Off-Your-Config">user-defined</a> iTerm configuration</li>
+  <li>Additional configuration can be added by modifying the config file 
+  $ open ~/.zshrc</li>
+  <li>Additional <a href="https://github.com/Powerlevel9k/powerlevel9k#customizing-prompt-segments">Powerlevel9k</a> configuration and attributes []</li>
+</ol>
+
+<p><strong>If you find this article useful, leave a comment. I’d love to get in touch and discuss what other type of content you might be interested in!</strong></p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Installing Python in less than 9999 steps!&url=https://manfredimiraula.com/yet-another-python-installation-guide" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=https://manfredimiraula.com/yet-another-python-installation-guide" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://manfredimiraula.com/yet-another-python-installation-guide" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#post" class="tag">&#35; post</a>
+          
+            <a href="/tags#blog" class="tag">&#35; blog</a>
+          
+            <a href="/tags#phd2datascience" class="tag">&#35; phd2datascience</a>
+          
+            <a href="/tags#data science" class="tag">&#35; data science</a>
+          
+            <a href="/tags#PhD" class="tag">&#35; PhD</a>
+          
+            <a href="/tags#python" class="tag">&#35; python</a>
+          
+            <a href="/tags#jupyter notebook" class="tag">&#35; jupyter notebook</a>
+          
+            <a href="/tags#iTerm2" class="tag">&#35; iTerm2</a>
+          
+            <a href="/tags#terminal" class="tag">&#35; terminal</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//manfredi-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-171677493-1', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
