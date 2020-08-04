@@ -18,30 +18,30 @@
 " property="og:description">
   
   
-    <meta content="https://manfredimiraula.com/tags/" property="og:url">
+    <meta content="http://localhost:4000/tags/" property="og:url">
   
   
   
-    <meta content="https://manfredimiraula.com/assets/img/manfredi.jpeg" property="og:image">
+    <meta content="http://localhost:4000/assets/img/manfredi.jpeg" property="og:image">
   
   
   
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
+    <meta name="twitter:site" content="@{"title"=>"about", "url"=>"about"}">
     <meta name="twitter:creator" content="@manfredimiraula">
   
     <meta name="twitter:title" content="Tags">
   
   
-    <meta name="twitter:url" content="https://manfredimiraula.com/tags/">
+    <meta name="twitter:url" content="http://localhost:4000/tags/">
   
   
     <meta name="twitter:description" content="Scientist, data scientist, blogger, trainer, learner, journey
 ">
   
   
-    <meta name="twitter:image:src" content="https://manfredimiraula.com/assets/img/manfredi.jpeg">
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/manfredi.jpeg">
   
 
 	<meta name="description" content="">
@@ -80,14 +80,19 @@
       <div class="author-name">Manfredi Miraula</div>
       <p>Scientist, data enthusiast, passionate number visualizer, learner and trainer.</p>
     </div>
+    <section class="contact">
+      <a  href="/about">
+        <h3 class="contact-title">About me</h3>
+        </a>
+      </section>
   </header> <!-- End Header -->
   <footer>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
-        
+        <!-- 
           <li><a href="https://twitter.com/manfredimiraula" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        
+         -->
         
           <li><a href="https://instagram.com/phd2datascience" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         
@@ -101,8 +106,11 @@
           <li class="linkedin"><a href="https://in.linkedin.com/in/manfredimiraula" target="_blank"><i class="fa fa-linkedin"></i></a></li>
         
         
-          <li class="email"><a href="mailto:manfredi.miraula@gmail.com# add your Email address"><i class="fa fa-envelope-o"></i></a></li>
+          <li class="youtube"><a href="https://www.youtube.com/channel/UCm-OCPoLtnKJO9mNWTMtXZA" target="_blank"><i class="fa fa-youtube"></i></a></li>
         
+        <!-- 
+          <li class="email"><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+         -->
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">
@@ -121,11 +129,13 @@
   
     <li ><a href="#Learn" class="tag">Learn <span>(2)</span></a></li>
   
-    <li ><a href="#PhD" class="tag">PhD <span>(2)</span></a></li>
+    <li ><a href="#PhD" class="tag">PhD <span>(3)</span></a></li>
   
     <li ><a href="#Programming" class="tag">Programming <span>(2)</span></a></li>
   
-    <li ><a href="#blog" class="tag">blog <span>(3)</span></a></li>
+    <li ><a href="#SQL" class="tag">SQL <span>(1)</span></a></li>
+  
+    <li ><a href="#blog" class="tag">blog <span>(4)</span></a></li>
   
     <li ><a href="#bokeh" class="tag">bokeh <span>(1)</span></a></li>
   
@@ -133,7 +143,7 @@
   
     <li ><a href="#career+changes" class="tag">career changes <span>(1)</span></a></li>
   
-    <li ><a href="#data+science" class="tag">data science <span>(5)</span></a></li>
+    <li ><a href="#data+science" class="tag">data science <span>(6)</span></a></li>
   
     <li ><a href="#data+visualization" class="tag">data visualization <span>(2)</span></a></li>
   
@@ -155,15 +165,17 @@
   
     <li ><a href="#personal" class="tag">personal <span>(2)</span></a></li>
   
-    <li ><a href="#phd2datascience" class="tag">phd2datascience <span>(3)</span></a></li>
+    <li ><a href="#phd2datascience" class="tag">phd2datascience <span>(4)</span></a></li>
   
     <li ><a href="#plotly" class="tag">plotly <span>(1)</span></a></li>
   
-    <li ><a href="#post" class="tag">post <span>(3)</span></a></li>
+    <li ><a href="#post" class="tag">post <span>(4)</span></a></li>
   
     <li ><a href="#programming" class="tag">programming <span>(1)</span></a></li>
   
-    <li ><a href="#python" class="tag">python <span>(1)</span></a></li>
+    <li ><a href="#programming+language" class="tag">programming language <span>(1)</span></a></li>
+  
+    <li ><a href="#python" class="tag">python <span>(2)</span></a></li>
   
     <li ><a href="#real+estate" class="tag">real estate <span>(2)</span></a></li>
   
@@ -200,6 +212,11 @@
 <!--  lists all posts corresponding to specific tag...-->
     
     <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
+    
+    <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>
         <small><span>| 12 Jul 2020</span></small>
     </div>
@@ -224,8 +241,22 @@
     </div>
     
   
+  <h2 id="SQL">SQL</h2>
+<!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
+    
+  
   <h2 id="blog">blog</h2>
 <!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
     
     <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>
@@ -272,6 +303,11 @@
   
   <h2 id="data+science">data science</h2>
 <!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
     
     <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>
@@ -408,6 +444,11 @@
 <!--  lists all posts corresponding to specific tag...-->
     
     <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
+    
+    <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>
         <small><span>| 12 Jul 2020</span></small>
     </div>
@@ -436,6 +477,11 @@
 <!--  lists all posts corresponding to specific tag...-->
     
     <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
+    
+    <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>
         <small><span>| 12 Jul 2020</span></small>
     </div>
@@ -460,8 +506,22 @@
     </div>
     
   
+  <h2 id="programming+language">programming language</h2>
+<!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
+    
+  
   <h2 id="python">python</h2>
 <!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/the-importance-of-sql">The importance of SQL as the key to unlock your data science career</a></span>
+        <small><span>| 31 Jul 2020</span></small>
+    </div>
     
     <div class="tag-list">
         <span><a href="/yet-another-python-installation-guide">Installing Python in less than 9999 steps!</a></span>

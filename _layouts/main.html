@@ -11,16 +11,21 @@ layout: default
       <div class="author-name">{{site.author}}</div>
       <p>{{site.about-author}}</p>
     </div>
+    <section class="contact">
+      <a  href="{{site.baseurl}}/about">
+        <h3 class="contact-title">About me</h3>
+        </a>
+      </section>
   </header> <!-- End Header -->
   <footer>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
-        {% if site.social-twitter %}
+        <!-- {% if site.social-twitter %}
           <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         {% else %}
           <li><a href="https://twitter.com/manfredimiraula" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        {% endif %}
+        {% endif %} -->
         {% if site.social-instagram %}
           <li><a href="https://instagram.com/{{ site.social-instagram }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         {% else %}
@@ -41,11 +46,16 @@ layout: default
         {% else %}
           <li class="linkedin"><a href="https://in.linkedin.com/manfredimiraula" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         {% endif %}
-        {% if site.social-email %}
+        {% if site.social-youtube %}
+          <li class="youtube"><a href="https://www.youtube.com/{{site.social-youtube}}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        {% else %}
+          <li class="youtube"><a href="https://www.youtube.com/channel/UCm-OCPoLtnKJO9mNWTMtXZA" target="_blank"><i class="fa fa-youtub" aria-hidden="true"></i></a></li>
+        {% endif %}
+        <!-- {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
         {% else %}
-          <li class="email"><a href="manfredi.miraula@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-        {% endif %}
+          <li class="email"><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        {% endif %} -->
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">

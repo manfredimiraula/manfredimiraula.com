@@ -5,7 +5,8 @@ permalink: ':title'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfredimiraula.com" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
-
+- title: about 
+  url: about
 # Author Settings
 author: Manfredi Miraula # add your name
 author-img: manfredi.jpeg # add your photo
@@ -16,7 +17,8 @@ social-twitter: manfredimiraula # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: manfredimiraula # add your Github handle
 social-linkedin: manfredimiraula # add your Linkedin handle
-social-email: manfredi.miraula@gmail.com# add your Email address
+social-youtube: channel/UCm-OCPoLtnKJO9mNWTMtXZA # add your Linkedin handle
+social-email:  # add your Email address
 
 # Disqus
 discus-identifier: manfredi-1
@@ -30,6 +32,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-image-size
 
 paginate: 8
 paginate_path: "/page/:num"
