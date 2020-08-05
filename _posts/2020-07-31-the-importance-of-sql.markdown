@@ -22,7 +22,7 @@ I started my investigation around SQL by looking on Google if there were some re
 
 I asked mysefl, where do developers go when they need knowledge? I personally go often to Stack Overflow and so I started to investigate the number of asks on StackOverflow with the belief that I would find a stable number of asks for SQL. I was hoping to find an increasingly steady line that reflected the current buzz around analytics and data science roles.
  
-To my disappointment, Stack Overflow contradicted me. When I queried the StackExchange [database][1] for the number of asks related to SQL versus the number of asks related to Python, I saw a change in users asks occurred around 2016, when the number of asks around Python surpassed the number of asks around SQL.
+To my disappointment, Stack Overflow contradicted me. When I queried the StackExchange [database][1] for the number of asks related to SQL versus the number of asks related to Python, I saw a change in the number of asks that occurred in 2016, when the Python was queried more than SQL.
  
  ![Python is getting more asks on StackOverflow](assets/img/2020-07-31-the-importance-of-sql-as-the-key-to-unlock-your-data-science-career/fig1.jpeg)*SQL and Python asks on StackOverflow*
  
