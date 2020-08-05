@@ -33,8 +33,7 @@ I'm a renown stubborn. I still believe that SQL is a foundational piece of the p
 ## SQL is a fundamental tool for all developers, not only data scientist
 Only after querying the StackExchange database directly I discovered that Stack Overflow produce a yearly report... It's good to know that my ability to research free dataset is improving!
  
-The reports are overall very interesting and contains a lot of information. Too much for what I was planning to do here. That's why I downloaded the datasets and replicated some simple visualizations to answer my question. If you are curious, you can find the dataset here for [2015][2015], [2016][2016], [2017][2017], [2018][2018], [2019][2019] and [2020][2020]:
- When comparing the results of the reports (they generally have ~50k+ respondents) we see an interesting picture.
+The reports are overall very interesting and contains a lot of information. Too much for what I was planning to do here. That's why I downloaded the datasets and replicated some simple visualizations to answer my question. If you are curious, you can find the dataset here for [2015][2015], [2016][2016], [2017][2017], [2018][2018], [2019][2019] and [2020][2020]. The results of the reports (generally polling ~50k+ respondents) show an interesting picture.
  
 Since 2016, Python has been increasingly present in the toolkit of developers. However, SQL ranks higher in the respondents as part of their toolkit, despite what we observed using the number of question asked, this language seems to be increasingly important. The figure below shows the trend of the languages used by the respondents. The data was filtered for SQL or Python, however, the respondents often have many languages that they use.
  
