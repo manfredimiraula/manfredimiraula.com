@@ -35,20 +35,20 @@ Only after querying the StackExchange database directly I discovered that Stack 
  
 The reports are overall very interesting and contains a lot of information. Too much for what I was planning to do here. That's why I downloaded the datasets and replicated some simple visualizations to answer my question. If you are curious, you can find the dataset here for [2015][2015], [2016][2016], [2017][2017], [2018][2018], [2019][2019] and [2020][2020]. The results of the reports (generally polling ~50k+ respondents) show an interesting picture.
  
-Since 2016, Python has been increasingly present in the toolkit of developers. However, SQL ranks higher in the respondents as part of their toolkit, despite what we observed using the number of question asked, this language seems to be increasingly important. The figure below shows the trend of the languages used by the respondents. The data was filtered for SQL or Python, however, the respondents often have many languages that they use.
+Since 2016, Python has been increasingly present in the languages used by developers. However, SQL ranks higher in as part of the toolkit. SQL seems to be increasingly important. The figure below shows the trend of the languages used by the respondents. The data was filtered for SQL or Python, however, the respondents often have many languages that they use.
  
-![SQL is present in more than 50% of the respondent](assets/img/2020-07-31-the-importance-of-sql-as-the-key-to-unlock-your-data-science-career/fig2.jpeg)*SQL is constantly present in the respondents toolkit and present in more than half of the entire set*
+![SQL is present in more than 50% of the respondent](assets/img/2020-07-31-the-importance-of-sql-as-the-key-to-unlock-your-data-science-career/fig2.jpeg)*SQL is used by more than half of the entire set*
  
-Lastly, I wanted to check the median earning value of SQL or Python. The data was filtered by median salary, converted to USD and then plotted over time. Despite we are not considering here the impact derived by the years of experience and the impact of developers using multiple languages, we can still see that there is a small gap between SQL and Python in terms of median salary. This increased in the past years with Python trending slightly higher.
+Lastly, I wanted to check the median earning value of SQL versus Python. The data was filtered by median salary, converted to USD and then plotted over time. Despite we are not considering here the impact derived by the years of experience and the impact of developers using multiple languages, we can still see that there is a small gap between SQL and Python in terms of median salary. This increased in the past years with Python trending slightly higher. 
  
-![Median salary in USD earned with Python or SQL](assets/img/2020-07-31-the-importance-of-sql-as-the-key-to-unlock-your-data-science-career/fig3.jpeg)*Median salary in USD for respondents that use SQL or Python*
+![Median salary in USD earned with Python or SQL](assets/img/2020-07-31-the-importance-of-sql-as-the-key-to-unlock-your-data-science-career/fig3.jpeg)*Median salary in USD for respondents that use SQL versus Python*
  
  
-## In the end, you should learn the language that allows you to be fast and efficient
+## In the end, you should learn the language that allows you to be the fastest and most efficient at investigating and manipulating data
  
-I started this investigation with the hypothesis that, based on my personal experience, SQL is the most important language to learn if you want to kick start your career in Analytics. Don't get me wrong, Python is very flexible and with all the libraries available out there, it allows to do very fancy stuff with few lines of code.
+I started this investigation with the hypothesis that, based on my personal experience, SQL is the most important language to learn if you want to kick start your career in Analytics. Don't get me wrong, Python is very flexible and with all the libraries available out there, it unlocks a number of powerful tools with few lines of code.
  
-However, I find that the real super power of a good analyst is to seek and find the data that you need and manipulate it quickly. SQL gives you that power. I often find myself comparing SQL with Excel and I personally think that SQL is Excel 2.0. At some point in the past, most of the work force used Excel in some degree or fashion. I think that this will eventually happen with SQL as well, especially if you work in the "Tech" industry.
+However, I find that the real super power of a good data person is to seek and find information and manipulate it quickly. SQL gives you that power. I often find myself comparing SQL with Excel and I personally think that SQL is Excel 2.0. I think that in the past, most of the work force at some point learned and started using Excel in some degree or fashion. I think that this will eventually happen with SQL as well, especially if you work in the "Tech" industry.
  
 Often SQL is undervalued in all the articles that pop up on my screen talking about data science and I think that most people start with Python thinking it will lead to an easy path to a data science role. This might be true for some, but in my experience 80% of data science is finding, collating and manipulating data. Which I think, is more easily accomplished using a language built for querying databases such as SQL.
  
