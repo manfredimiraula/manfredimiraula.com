@@ -1,0 +1,177 @@
+I"�8<p><strong>Do you want to become 14x faster at managing your data pipeline and data wrangling operations? Then read along to learn how to setup a SQL database on your local machine using Postgres and psql!</strong></p>
+
+<p>Eveyrhting starts for a reason…I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python.</p>
+
+<p>I got bored. Python is not the elective language to clean and manage data. Personally, I have experience and I’m comfortable using SQL which is my go-to language to manage clean and wrangle data. SQL has the advantage of being extremely efficient and fast when it comes to do transformation and pre-exploratory data analysis, or pre-EDA.</p>
+
+<p><strong>What are the advantages to manipulate data with SQL versus Python?</strong>
+I recently came across an <a href="https://towardsdatascience.com/python-vs-sql-comparison-for-data-pipelines-8ca727b34032?gi=73d7ac449eaa">article</a> that compared SQL and Python for ETL transformations. The small test found SQL being able to be up to 14.5x faster in data processing and data transformation.</p>
+
+<p>In my experience, you want to use Python (or any other scripting language) when you need to fine tune an analysis but the data that you have at hand is mostly cleaned and already aggregated the way it should be. You also want to use Python when you need to recursively or continuously pull data from external sources. In between, after the raw data has been pulled from the source and before doing amazing ML models or visualizations, is the no-men land where SQL is your friend!</p>
+
+<p>[IMAGE flow diagram of where to use Python vs SQL]</p>
+
+<p>SQL is advantageous to standardize transformation and cleaning processes, it is often very readable and it has a low entry barrier. Additionally, in fast-paced business environments, where you need to answer quickly to business questions, SQL is often enough to make peace with your business stakeholders.</p>
+
+<p><img src="assets/img/2020-09-28-becoming-a-sql-database-administrator/quest_start.jpg" alt="Our hero starts the quest" /><em>Quest starts…</em></p>
+
+<p><strong>Our goal is to become a SQL database administrator!</strong>
+This set up the context and where my quest started. I wanted to create my own internal SQL database on my local machine, so that I could handle data faster and with a flow that resemble the one you would generally use in a proper business setting.</p>
+
+<p>A quick Google search made me realize that most of the guides and tutorials out there are not clean or clear. Also, the vast majority of what I found talks about setting up an AWS service. This would be, of course, the right choice if you need to productionize your environment. For example, if your business need high capacity in terms of storage and fast data retrieval. For my needs, I can go by using my laptop hard drive. Additionally, ßI see the beauty and the advantages of setting up a simple SQL database “old school”. This could be the first step to learn more about data engineering and how to build data pipelines.</p>
+
+<p>I decided to roll up my sleeves and create my personal cheat sheet to create a local Postgres database and copy the data I want there.</p>
+
+<p><strong>Preliminary steps</strong>
+We want, of course, to have some data at hand. This process is probaly worth it when you have to deal with a lot of data (many MegaBytes or Gigabytes of data), however you can test the process with a small sample.</p>
+
+<p>We need to decide which SQL environment to use. For this guide I used PostgreSQL because this is the SQL language I’m currently using and I discovered it has a number of additional features, including packages for spatial analysis.</p>
+
+<p>A primer for the tutorial:</p>
+<ul>
+  <li>Code snippets that need to be entered to progress towards our goal are highlighted by the word <strong><em>Run</em></strong></li>
+  <li>Variables that need to be modified are highlighted by square brakets and the text inside is the one you need to edit e.g. [modify_this_text]. You want to remove the brackets before running the command (unless specified otherwise!)</li>
+  <li>Every command line begins with “$” however, this is a placeholder that indicates a new entry and command. Run the commands without this</li>
+  <li>Once inside Postgres, you will see that “$” is substituted by “postgres=#” or “postgres=&gt;”. These are placeholders for new line entries, so run the commands without these prefixes</li>
+  <li>It is very important that, when inside the postgres environment, we close the command entry with a semi-column. Failing to do so will not execute the command, but it won’t give you an error either, thus leavin you baffled trying to understand what went wrong… (I learned it the hard way!)</li>
+</ul>
+
+<p><img src="assets/img/2020-09-28-becoming-a-sql-database-administrator/flow_0.png" alt="Flow diagram" /><em>The flow representation of the steps we want to accomplish</em></p>
+
+<p><strong>Step 1 and 2: Install Postgres, create user with the right privileges and create the database</strong></p>
+
+<p>To install Postgres we can use brew (If you don’t know brew, you can read how to install Brew and Python in one of my previous tutorial <a href="https://manfredimiraula.com/yet-another-python-installation-guide">here</a>).</p>
+
+<p>From your terminal
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew update
+<span class="nv">$ </span>brew <span class="nb">install </span>postgresql
+</code></pre></div></div>
+
+<p>After the installation is complete, we can verify that Postgres has been successfully installed</p>
+
+<p><strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>postgres <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>You should see the installed version printed</p>
+
+<p><br /></p>
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300" />
+</p>
+
+<p><img src="assets/img/2020-09-28-becoming-a-sql-database-administrator/postgres_version.png" alt="Postgres version" /><em>Terminal output confirming Postgres has been installed correctly</em>
+<br /></p>
+
+<p>To start the service 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew services start postgresql
+</code></pre></div></div>
+
+<p>In case you need to stop or restart the service you can use the following commands</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew services stop postgresql
+<span class="nv">$ </span>brew services restart postgresql
+</code></pre></div></div>
+
+<p>We can now enter the Postgres environment using the Terminal UI psql. 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>psql postgres
+</code></pre></div></div>
+
+<p>To verify the list of users currently present 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=</span><span class="c"># \du</span>
+</code></pre></div></div>
+
+<p>At this stage we want to ask ourselves if other users will need to access the database and wether they need to have full or limited access. In my case, I’m the only one accessing the database and there is no secuirity issue with the data I’m using. I will create only one user with full access rights.</p>
+
+<p>In order to create your user
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=</span><span class="c"># CREATE ROLE [user_name] WITH LOGIN PASSWORD ['pswd']</span>
+</code></pre></div></div>
+<p>A quick check to verify that the user has been created
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=</span><span class="c"># \du</span>
+</code></pre></div></div>
+
+<p>You should see now the new user in listed and their attributes. Your user should have no Attributes right now, which is normal. We are going to give them to it now. 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=</span><span class="c"># ALTER ROLE [user_name] CREATEDB</span>
+</code></pre></div></div>
+
+<p>If we check again the user list you should see the “CREATEDB” attributes now listed under the user name. We can now exit from the environment and log in again using the new user we created</p>
+
+<p><strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=</span><span class="c"># \q</span>
+<span class="nv">$ </span>psql postgres <span class="nt">-U</span> <span class="o">[</span>user_name]
+</code></pre></div></div>
+
+<p>Since the user we created doesn’t have admin privileges, you will see the prompt changed slightly. This is absolutely normal and reflects the fact that the user is not a super user.</p>
+
+<p>We are ready to create our database
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=&gt;</span> CREATE DB <span class="o">[</span>database_name]
+<span class="nv">$postgres</span><span class="o">=&gt;</span> GRANT ALL PRIVILEGES ON DATABASE <span class="o">[</span>database_name] TO <span class="o">[</span>user_name]
+</code></pre></div></div>
+
+<p>The last command gave our user the correct privileges to edit and modify the database. We will need these privileges for the following steps.</p>
+
+<p>To verify that everything went accordingly to plan
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=&gt;</span> <span class="se">\c</span>onnect <span class="o">[</span>database_name]
+</code></pre></div></div>
+<p>You should see the prompt telling you you have been connected with the database.</p>
+
+<p>Congrats! This conclude step 1 and 2 of our flow diagram</p>
+
+<p>[image updated flow]</p>
+
+<p><strong>Step 3 and 4: create the table and copy the data</strong>
+A primer for this step. In order to create the table, we need to have a clear picture of what the table will look like. For instance, we could copy the data as they are or we might want to pre-process the data a little bit to change the column name or the data type. If you are not familiar with SQL and you don’t know what data types are, you can find my SQL 101 Introduction on SQL [here][sql101]. I often use [Lucidchart][lucid] to create and design database and table structures. This tool is a freemium but I found that the free version has all the requirements I need for basic database architecture.</p>
+
+<p>The table creation step is quite simple, but requires some attention to details as we need to make sure that the column names and the data types correctly reflect thos of the raw data.</p>
+
+<p><strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$psql</span> postgres <span class="nt">-U</span> <span class="o">[</span>user_name]
+<span class="nv">$postgres</span><span class="o">=&gt;</span> CREATE TABLE <span class="o">[</span>table_name] <span class="o">([</span>col1] <span class="o">[</span>data_type], <span class="o">[</span>col2] <span class="o">[</span>data_type], ..., <span class="o">[</span>coln] <span class="o">[</span>data_type]<span class="o">)</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Common data types that you can use:</p>
+<ul>
+  <li>Integer</li>
+  <li>Numeric (float numbers)</li>
+  <li>Varchar(255) (here the 255 stands for the number of characters contained by the string. You can set up a fixed number if you know that the string will have exactly a certain number of characters or set max or a large number if you want to be flexible in the number of charcacters accepted)</li>
+  <li>date</li>
+</ul>
+
+<p>To check that our table was created correctly you can run
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=&gt;</span> <span class="se">\d</span>t
+</code></pre></div></div>
+
+<p>We are close to succeed in our quest. Last step remaining is to copy the data 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=&gt;</span> <span class="se">\c</span>opy <span class="o">[</span>table_name] <span class="o">(</span>col1, col2, ..., coln<span class="o">)</span> from <span class="s1">'~/path/of/file'</span> delimiter <span class="s1">'[csv_delimiter]'</span> csv header<span class="p">;</span>
+</code></pre></div></div>
+
+<p>You may have different requirements here, depending the format of your source file. Here you can find the different options you can use while copying the data (link).</p>
+
+<p>If everything was successful, you will see the prompt showing the numebr fo rows copied inside the table, that should be the same number of rows of you original source file.</p>
+
+<p>[IMAGE]</p>
+
+<p>A further verification step, we can query the table directly 
+<strong><em>Run</em></strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$postgres</span><span class="o">=&gt;</span> SELECT <span class="k">*</span> FROM <span class="o">[</span>table_name] LIMIT 10<span class="p">;</span>
+</code></pre></div></div>
+
+<p>[Achievemnt Image]</p>
+
+<p>Congratulations on building your first SQL database!!! This concludes step 4 of our flow diagram</p>
+
+<p>[updated flow]</p>
+
+<p>[sql101]:
+[lucid]:</p>
+:ET
