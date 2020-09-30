@@ -1,4 +1,4 @@
-<p>Everything starts for a reason…I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python.</p>
+I"{H<p>Everything starts for a reason…I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python.</p>
 
 <p>I got bored. Python is not the elective language to clean and manage data. Personally, I have experience and I’m comfortable using SQL which is my go-to language to manage clean and wrangle data. SQL has the advantage of being extremely efficient in transforming operations and pre-exploratory data analysis.</p>
 
@@ -246,3 +246,4 @@ You might be wondering at this point whether you will need to always query data 
 
 <p><em>It is not because things are difficult that we do not dare; it is because we do not dare that things are difficult.. L.A. Seneca</em></p>
 
+:ET
