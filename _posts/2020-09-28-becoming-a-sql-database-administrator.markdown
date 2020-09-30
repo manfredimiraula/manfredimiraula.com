@@ -1,3 +1,14 @@
+---
+layout: post
+title: Become a SQL database administrator, build your first database in Postgres and become 10x faster in your daily ETL routines
+date: 2020-09-27 11:30
+description: Here I show how to create your first local SQL database using Postgres, psql and PgAdmin. By using SQL in your datasciene workflow, we can achieve better performances than using Python for pure data cleaning and wrangling of semi-organized data sets.
+img: 2020-09-28-becoming-a-sql-database-administrator/banner.jpg
+fig-caption: # Add figcaption (optional)
+tags: [post, blog, phd2datascience, data science, datascience, PhD, python, SQL, programming language, database, database administrator, SQL admin, Postgres, PgAdmin, tutorial, training]
+ 
+---
+
 Everything starts for a reason...I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python.
  
 I got bored. Python is not the elective language to clean and manage data. Personally, I have experience and I'm comfortable using SQL which is my go-to language to manage clean and wrangle data. SQL has the advantage of being extremely efficient in transforming operations and pre-exploratory data analysis.
