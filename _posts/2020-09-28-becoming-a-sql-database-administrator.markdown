@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Become a SQL database administrator and achieve 10x faster data operations
+title: Become a SQL database administrator, build your first database in Postgres and become 10x faster in your daily ETL routines
 date: 2020-09-27 11:30
 description: Here I show how to create your first local SQL database using Postgres, psql and PgAdmin. By using SQL in your datasciene workflow, we can achieve better performances than using Python for pure data cleaning and wrangling of semi-organized data sets.
 img: 2020-09-28-becoming-a-sql-database-administrator/banner.jpg
@@ -9,11 +9,9 @@ tags: [post, blog, phd2datascience, data science, datascience, PhD, python, SQL,
  
 ---
 
-**Do you want to become 14x faster at managing your data pipeline and data wrangling operations? Then read along to learn how to setup a SQL database on your local machine using Postgres and psql!**
+Eveyrthing starts for a reason...I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python. 
 
-Eveyrhting starts for a reason...I was playing around with some messy data that I wanted to tame for a personal data science project. I automatically, without thinking, imported the data in Python. 
-
-I got bored. Python is not the elective language to clean and manage data. Personally, I have experience and I'm comfortable using SQL which is my go-to language to manage clean and wrangle data. SQL has the advantage of being extremely efficient and fast when it comes to do transformation and pre-exploratory data analysis, or pre-EDA.
+I got bored. Python is not the elective language to clean and manage data. Personally, I have experience and I'm comfortable using SQL which is my go-to language to manage clean and wrangle data. SQL has the advantage of being extremely efficient in transforming operations and pre-exploratory data analysis.
 
 **What are the advantages to manipulate data with SQL versus Python?**
 I recently came across an [article][article] that compared SQL and Python for ETL transformations. The small test found SQL being able to be up to 14.5x faster in data processing and data transformation. 
@@ -263,7 +261,7 @@ You should now access the server and a similar screen that will have the databas
 ![Flow diagram](assets/img/2020-09-28-becoming-a-sql-database-administrator/flow_5.png)*Step 5 completed!*
 <br>
 
-Welcome to day one of yout new life as a SQL database creator and administrator!
+Welcome to day one of your new life as a SQL database creator and administrator!
 
 *It is not because things are difficult that we do not dare; it is because we do not dare that things are difficult.. L.A. Seneca*
 
