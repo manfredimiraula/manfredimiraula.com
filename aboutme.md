@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: My hunger for new projects and new knowledge never stops
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Manfredi Miraula, 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm a Data builder and developer, content creator, professional trainer in the Analytics space. 5+ years of experience in Analytics, mostly DS and DE roles. I offer consulting services in the Analytics space and technical mentoring for folks changing career into Data Science/Engineering.
 
-What else do you need?
+When I'm not at my laptop, I enjoy paiting miniatures, do CrossFit or climbing and cooking
 
 ### My story
+I had a stint in Academia, doing research for the University of Queensland in Australia and the Maynooth University in Ireland. Once obtained my PhD in Chemistry, I decided to move to the industry and the rest is history...! I fell in love with programming and I decided to continue towards a career in tech, programming and Analytics. 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
