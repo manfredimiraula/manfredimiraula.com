@@ -44,7 +44,7 @@ It is known that, the best tool and apps are those created to serve a need, such
 
 I imagine the projects developping into three major areas.
 
-![Cryptovaluer diagram](assets/img/posts/20220131/cryptovaluer_diagram.jpg)\_Cryptovaluer diagram. The color hints at the status of the different parts.
+![Cryptovaluer diagram](/assets/img/posts/20220131/cryptovaluer_diagram.jpg)
 
 # The goal
 

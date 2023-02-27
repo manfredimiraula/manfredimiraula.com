@@ -36,7 +36,7 @@ I asked myself, where do developers go when they need knowledge? I personally go
 
 To my disappointment, Stack Overflow contradicted me. When I queried the StackExchange [database][1] for the number of asks related to SQL versus the number of asks related to Python, I saw a change in the number of asks that occurred in 2016, when the Python was queried more than SQL.
 
-![Python is getting more asks on StackOverflow](assets/img/posts/20200731/fig1.jpeg)_SQL and Python asks on StackOverflow_
+![Python is getting more asks on StackOverflow](/assets/img/posts/20200731/fig1.jpeg)_SQL and Python asks on StackOverflow_
 
 My investigation of the StackExchange database shows that so far, in 2020, we had 14k questions regarding SQL (asks that have "sql" in their title). This is -35% from 2019 and -56% from 2013 (the year with the highest number of asks).
 
@@ -50,11 +50,11 @@ The reports are overall very interesting and contain a lot of information. Too m
 
 Since 2016, Python has been increasingly present in the languages used by developers. However, SQL ranks higher as part of their toolkit. This data suggest that both are foundational tools for any programmer. The figure below shows the trend of the languages used by the respondents. The data was filtered for SQL or Python, however, the respondents often have many languages that they use.
 
-![SQL is present in more than 50% of the respondent](assets/img/posts/20200731/fig2.jpeg)_SQL is used by more than half of the entire set_
+![SQL is present in more than 50% of the respondent](/assets/img/posts/20200731/fig2.jpeg)_SQL is used by more than half of the entire set_
 
 Lastly, I wanted to check the median earning value of SQL versus Python. The data was filtered by median salary, converted to USD and then plotted over time. Despite the fact that we are not considering the impact derived by the years of experience and the impact of developers using multiple languages, we can still see that there is a small gap between SQL and Python in terms of median salary. This increased in the past years with Python trending slightly higher.
 
-![Median salary in USD earned with Python or SQL](assets/img/posts/20200731/fig3.jpeg)_Median salary in USD for respondents that use SQL versus Python_
+![Median salary in USD earned with Python or SQL](/assets/img/posts/20200731/fig3.jpeg)_Median salary in USD for respondents that use SQL versus Python_
 
 ## In the end, you should learn the language that allows you to be the fastest and most efficient at investigating and manipulating data
 

@@ -34,11 +34,15 @@ You will obtain a poweruser terminal similar to this
 
 If you are more of a visual person like I am, you can follow the video tutorial shows how to change and modify iTerm.
 
-<br>
 
-![Clean Python installation video tutorial](/assets/img/posts/20200318/myface.png)_[Video Tutorial][youtube]_
-
+<center>
 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=xrrd1aw-BXg
+" target="_blank"><img src="http://img.youtube.com/vi/xrrd1aw-BXg/0.jpg" 
+alt="Clean Python installation video tutorial" width="480" height="360" border="10" /></a>
+<br>
+</center>
+
 <hr>
 
 ## How to install python in less than 9999 steps

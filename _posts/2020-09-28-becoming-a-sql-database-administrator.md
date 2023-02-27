@@ -40,7 +40,7 @@ In my experience, you want to use Python when you need to fine tune the analysis
 
 With SQL, the standardization of the transformation and cleaning processes is often straightforward, the code is very readable and with a low entry barrier for others. Additionally, in fast-paced business environments, where you need to answer quickly to business questions, SQL is often enough to make peace with your business stakeholders.
 
-![Our hero starts the quest](assets/img/posts/20200928/quest_start.jpg)_Quest starts..._
+![Our hero starts the quest](/assets/img/posts/20200928/quest_start.jpg)_Quest starts..._
 
 **Our goal is to become a SQL database administrator!**
 This set up the context and where my quest started. I wanted to create my own internal SQL database on my local machine, so that I could handle data faster and with a flow that resembles the one you would generally use in a proper business setting.
@@ -62,7 +62,7 @@ A primer for the tutorial:
 - Once inside Postgres, you will see that "$" is substituted by "postgres=#" or "postgres=>". These are placeholders for new line entries, so run the commands without these prefixes
 - It is very important that, when inside the postgres environment, we close the command entry with a semicolon. Failing to do so will not execute the command, but it won't give you an error either, thus leaving you baffled trying to understand what went wrong... (I learned it the hard way!)
 
-![Flow diagram](assets/img/posts/20200928/flow_0.png)_The flow representation of the steps we want to accomplish_
+![Flow diagram](/assets/img/posts/20200928/flow_0.png)_The flow representation of the steps we want to accomplish_
 
 **Step 1 and 2: Install Postgres, create user with the right privileges and create the database**
 
@@ -88,7 +88,7 @@ You should see the installed version printed
 
 <br>
 <p align="center">
- <img width="307" height="52" src="assets/img/posts/20200928/postgres_version.png">
+ <img width="307" height="52" src="/assets/img/posts/20200928/postgres_version.png">
  <div align="center" class="caption">Successful installation will show the version of Postgres installed</div>
 </p>
 <br>
@@ -137,7 +137,7 @@ $postgres=# ALTER ROLE [user_name] CREATEDB
 ```
 <br>
 <p align="center">
- <img width="745" height="125" src="assets/img/posts/20200928/superuser.png">
+ <img width="745" height="125" src="/assets/img/posts/20200928/superuser.png">
  <div align="center" class="caption">List of user in the database and their access rights or Attributes</div>
 </p>
 <br>
@@ -210,7 +210,7 @@ If everything was successful, you will see the prompt showing the number of rows
  
 <br>
 <p align="center">
- <img width="195" height="73" src="assets/img/posts/20200928/rows_copied.png" >
+ <img width="195" height="73" src="/assets/img/posts/20200928/rows_copied.png" >
  <div align="center" class="caption">Result of the COPY process</div>
 </p>
 <br>
@@ -229,7 +229,7 @@ Congratulations on building your first SQL database!!! This concludes step 4 of 
  
 <br>
 <p align="center">
- <img width="600" height="310" src="assets/img/posts/20200928/success.jpg" >
+ <img width="600" height="310" src="/assets/img/posts/20200928/success.jpg" >
  <div align="center" class="caption">From Harry Potter and the Goblet of Fire I give you the Triwizard Cup!</div>
 </p>
 <br>
@@ -252,7 +252,7 @@ The following step will connect to the database
 - Populate the field "Name" with the name of your database
 <br>
 <p align="center">
- <img width="493" height="538" src="assets/img/posts/20200928/pg_2.png" >
+ <img width="493" height="538" src="/assets/img/posts/20200928/pg_2.png" >
  <div align="center" class="caption">Set up the name of the server, ideally with the database name you created</div>
 </p>
 <br>
@@ -265,7 +265,7 @@ The following step will connect to the database
    4. Insert the password you set up when creating the user
 <br>
 <p align="center">
- <img width="493" height="538" src="assets/img/posts/20200928/pg_3.png" >
+ <img width="493" height="538" src="/assets/img/posts/20200928/pg_3.png" >
  <div align="center" class="caption">Few more parameters for the connection...</div>
 </p>
 <br>
@@ -274,13 +274,13 @@ The following step will connect to the database
 You should now access the server and a similar screen that will have the database you are connected with on the left hand side
  
 <br>
-![Inside PgAdmin](assets/img/posts/20200928/pg_4.png)*Inside PgAdmin!*
+![Inside PgAdmin](/assets/img/posts/20200928/pg_4.png)*Inside PgAdmin!*
 <br>
  
  
  
 <br>
-![Flow diagram](assets/img/posts/20200928/flow_5.png)*Step 5 completed!*
+![Flow diagram](/assets/img/posts/20200928/flow_5.png)*Step 5 completed!*
 <br>
  
 Welcome to day one of your new life as a SQL database creator and administrator! This is just a fraction of what you can do with Postgres and your SQL database, it’s up to you to keep learning!
