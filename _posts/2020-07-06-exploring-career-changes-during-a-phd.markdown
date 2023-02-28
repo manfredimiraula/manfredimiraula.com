@@ -2,21 +2,16 @@
 layout: post
 read_time: true
 show_date: true
-title: Explore career opportunities while pursuing your PhD.
-date: 2020-07-06 07:53:20 -0600
-description: Exploring career changes during a PhD. Why PhDs should explore the field of Data Science.
-img: posts/20200706/attimo_fuggente.jpeg
+title: Java vs. Python
+date: 2023-02-27 13:00:00 -0600
+description: Differences between Java vs Python. Is one better than the other?
+img: 
 tags:
   [
     post,
-    personal,
-    blog,
-    phd2datascience,
-    data science,
-    PhD,
-    career,
-    career changes,
-    opportunities,
+    software development, 
+    python,
+    java
   ]
 author: Manfredi Miraula
 
@@ -24,50 +19,55 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 toc: yes # leave empty or erase for no TOC
 ---
 
-## Only 0.45% of science PhDs that graduate every year will ever become professors. You better start looking for alternatives.
+# Java vs. Python: A Comparison of Features and Use Cases
 
-If you are attending a PhD programme, chances are you consider yourself quite smart. Most likely you are very dedicated and you possess the grit to go down an intense and challenging path… But do you really think you are part of the 0.45% [1]?
+Recently, I had a discussion with a senior Java developer friend of mine, who believed that Python was not a "real" programming language. This belief is not uncommon among Java developers who may view Java as a more powerful and robust language compared to Python. I don't have experience with Java, so I tried to understand if his statement was an "absolute" or if there are more gray areas to be explored. After this learning spree (where I understand, I just touched the surface of what is possible and all the ripple effect of using Java versus Python) I believe that each language has its own unique strengths and applications. In this article, we'll take a closer look at the key features and common use cases for Java and Python to help you decide which language is best suited for your next project.
 
-The number of doctoral degrees awarded has more than doubled since between 2000 and 2018. In the academic job market that keeps shrinking and is becoming more and more competitive, the opportunities for the “average” PhD to carve their path to professorship is slimmer than ever.
+## Java Features and Use Cases:
 
-![The number of PhD graduated in the US since 1958](/assets/img/posts/20200706/number-phd.png)_Number of PhD graduates graduated in the US since 1958. S&E: Science and Engineering; Non-S&E: non STEM field [2] & [3]._
+Java is a widely-used, general-purpose programming language that is known for its performance, scalability, and security features. Some of the key features of Java include:
 
-## Professorship is a path that is not easily accessible to everyone
+Object-Oriented Programming: Java is an object-oriented programming language, which means it emphasizes the use of objects, classes, and inheritance to create reusable, modular code.
 
-When I started my PhD in 2013, my dream was to become a professor. I dreamt about being at the forefront of scientific discovery and being able to mold new minds for the future. However, I realized that this was going to remain a dream. Don’t get me wrong, I loved my years as a PhD student. I was lucky enough to travel the world, produce scientific content and train others. But I realized half-way through that I also wanted to affirm myself as a professional and grow in my career.
+Platform Independence: Java code can run on any platform with a Java Virtual Machine (JVM), which makes it highly portable and allows developers to write code once and run it on multiple platforms.
 
-I realized that, despite the competition and the limited job openings that are available every year, I didn’t want to travel from contract to contract every number of years, from post-doc to post-doc until one-day, maybe, I would be lucky enough to find a tenure track position opened at a University in the middle of a country very far from home. I started late to explore alternatives to change my career path. I was fortunate enough to find a new passion in data science. Of course there are a lot of pros and cons in changing careers but I personally believe that this is something you should actively explore while completing your higher degree!
+Strong Typing: Java is a statically-typed language, which means that variable types must be declared explicitly at compile time. This can help prevent errors and make code easier to maintain.
 
-## What are the advantages of an alternative career outside Academia after your PhD?
+Some examples of use cases for Java include:
 
-1. The career progression is stable enough
-2. Your professional skills acquired in one specific sector or company can be transferred easily to another company, thus making you more appealing in the job market
-3. This was a big part for me. Once you start a job, you can become an adult… For example you can afford to ask for a mortgage!
-4. You can choose a job that makes you travel around the world (hello consultants!) but you don’t have to! You can choose to stay in one place and maybe start building your family
+Enterprise Applications: Java is a popular choice for developing large-scale enterprise applications due to its performance, scalability, and security features. Companies like LinkedIn, Netflix, and Amazon use Java extensively for their back-end systems.
 
-I was lucky to find myself in a position where I could learn the basics of data science and from there I fell in love with programming and manipulating data. It was like going back to the lab, tinkering with flasks and batches and testing out hypotheses, getting results that either proved or confuted the initial assumptions.
+Android App Development: Java is the primary language used for developing Android apps, which run on over 2.5 billion active devices worldwide.
 
-I think that the field of data science has a number of advantages. Most importantly, these jobs are now in high demand which make the job market more receptive for new people entering the filed.
+Web Development: Java is often used for building web applications using frameworks like Spring and Struts.
 
-## Why both STEM and non STEM PhDs can succeed in Data Science
+## Python Features and Use Cases:
 
-The basic assumptions that hold true for being a successful PhD are the same in data science. For me, the data science process is like the process I was doing while in grad school:
+Python, on the other hand, is a high-level, interpreted programming language that is known for its simplicity, ease of use, and versatility. Some of the key features of Python include:
 
-1. Understand the data and the field in which you are operating
-2. Evaluate the limitations and the edge cases, and set up a controlled system for experimenting
-3. Form assumptions and hypotheses
-4. Find a way to test the hypotheses and generate insights and recommendations
+Easy to Learn: Python has a simple, easy-to-understand syntax that makes it a popular choice for beginners.
 
-If you wrote a review and or a scientific paper, you would find that the mental process is thus very similar.
+Dynamic Typing: Unlike Java, Python is dynamically typed, which means that variable types are inferred at runtime rather than being declared explicitly.
 
-The field of DS is evolving rapidly and constantly. This give us the chance to continuously learn and find our own niche in the field. Again, a process very similar to Academia.
+Large Standard Library: Python comes with a large standard library that includes modules for a wide range of tasks, from web development to scientific computing.
 
-Personally, I also fell in love with the ability to create from scratch using programming languages. Once I realized that by using lines of codes you can build literally anything you want from a website to an entire business, it has been a one-way ticket to becoming a wanna-be programming geek.
+Some examples of use cases for Python include:
 
-If you love the scientific process of learning by hypothesis testing and experimentation and you are an avid and constant learner, I believe that the field of Data Science could open you doors an new horizons, and that you can find yourself successful in this career. **Data Science or not, have you started exploring the alternatives that you have outside Academia?**
+Data Analysis and Machine Learning: Python is widely used for data analysis and machine learning tasks due to its ease of use, large number of libraries, and powerful frameworks like TensorFlow and PyTorch.
 
-_It is not because things are difficult that we do not dare; it is because we do not dare that things are difficult._. L.A. Seneca
+Scientific Computing: Python is also used extensively in scientific computing for tasks like simulation, modeling, and visualization.
 
-[1]: [https://www.nature.com/articles/d41586-019-00097-x]
-[2]: [https://www.census.gov/library/stories/2019/02/number-of-people-with-masters-and-phd-degrees-double-since-2000.html]
-[3]: [https://www.insidehighered.com/news/2018/12/10/are-numbers-doctorates-awarded-finally-starting-reflect-poor-academic-job-market]
+Web Development: Python is used for building web applications using frameworks like Django and Flask.
+
+## Who uses what? 
+I think it is important to understand where and how this languages are used. One implicit assumption when we say that Python is not a "real" programming language, is that it is not use industrially, to power Saas products, tech unicorns etc. 
+
+Java is used by the likes of Google, AirBnB, Netflix, Instagram, Pinterest, Uber and Spotify. These are all well known tech brands that reach the unicorn status and will be the envy of any CV creator! 
+
+Python however, is also part of the tech stack of some big names in tech. The same companies using Java are using Python as well. Google, Instagram, Facebook, Spotify, Quora, Dropbox, Netflix and Reddit they all use Python in their primary stack. 
+
+The overlap of these names and the presence of flagship brands for both languages, makes me think that, indeed, there is room for both as a de facto fully fledged programming language. 
+
+## Conclusion:
+
+Ultmiately, even if Python may be seen as not being a "real" programming language, the reality is that each language has its own unique strengths and applications. The choice between Java and Python will ultimately depend on the specific needs and requirements of the project at hand, as well as the team and the available talent in your talent pool. 
