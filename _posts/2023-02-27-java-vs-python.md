@@ -18,6 +18,7 @@ tags:
 category: theory
 author: Manfredi Miraula
 description: "From a conversation with a fried, exploring the simple differences between Java and Python"
+cover-img: "/assets/img/posts/20230228/pythonvsjava_cover.png"
 ---
 
 # Java vs. Python: A Comparison of Features and Use Cases
