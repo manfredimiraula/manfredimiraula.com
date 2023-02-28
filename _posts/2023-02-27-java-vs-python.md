@@ -79,4 +79,4 @@ Spotify: Spotify uses Python for a variety of purposes, including data analysis,
 
 Conclusion:
 
-In conclusion, while some Java developers may view Python as not being a "real" programming language, the reality is that each language has its own unique strengths and applications. The choice between Java and Python will ultimately depend on the specific needs and requirements of the project at hand. If you're developing a large-scale enterprise application, Java may be the best choice due to its performance and scalability. On the other hand, if you're working on data analysis or scientific computing, Python's ease of use and large number of libraries may make it the better choice. Ultimately, the choice between Java and Python will depend on your specific needs and expertise as a developer.
+Ultmiately, even if Python may be seen as not being a “real” programming language, the reality is that each language has its own unique strengths and applications. The choice between Java and Python will ultimately depend on the specific needs and requirements of the project at hand, as well as the team and the available talent in your talent pool.
