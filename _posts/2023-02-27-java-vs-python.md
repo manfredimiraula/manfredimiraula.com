@@ -10,12 +10,10 @@ tags:
   [
     post,
     blog,
-    phd2datascience,
-    data engineering,
-    dataengineering,
-    PhD,
-    analytics,
-    continuous learning
+    continuous learning, 
+    software development, 
+    python, 
+    java
   ]
 category: theory
 author: Manfredi Miraula
