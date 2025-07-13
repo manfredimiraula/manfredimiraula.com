@@ -1,213 +1,158 @@
-## Unreleased version
-
-- Added `navbar-var-length` config setting that allows the navigation menu to be the same length as the longest sub-menu, so that long words in the submenu are not cut off (#765) 
-- Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
-- Added `edit_page_button` config setting that adds a "Edit page" button to the footer (to edit the current page on GitHub) (#1004)
-- BREAKING CHANGE: More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings 
-- Fixed page titles, subtitles, and excerpts rendering correctly when there are special characeters in them (#856) 
-- Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
-- Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
-- Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
-- Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
-- Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
-- Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
-- Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
-- Fixed bug where special characters in the title led to broken share tags (#744)
-- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
-- Added support for Cloudflare Analytics (#797)
-- Added Reddit in share options of posts (#815)
-- Added support for giscus comments (#886) and CommentBox (#960)
-- Fixed bug where staticman didn't work jQuery slim version is used (#766)
-- Fixed very long strings to wrap around the next line rather than go off-screen (#787)
-- Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
-- Added social network links for Discord (#907), Kaggle (#961), and Hackerrank (#978)
-- Made the home page feed more accessible for screen readers (#950) 
-
-## v5.0.0 (2020-09-15)
-
-One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes that are not backwards-compatible had to be made.
-
-#### Breaking changes
-
-- Renamed `description` YAML parameter to `share-description` to be more clear
-- Renamed `description` config setting to `rss-description` since it was only used in RSS (the FAQ explains the difference between YAML parameters and config settings if you're confused)
-- Removed YAML parameter `use-site-title` (you can now specify the exact title using `share-title`)
-- Removed undocumented YAML parameters `meta-title` and `meta-description`
-- Removed `link-tags` config setting because it wasn't necessary. If you use tags, there will now always be a tags page created; if you don't use tags there won't be a tags page.
-- The YAML parameter `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
-
-#### New parameters and settings
-
-- Added `full-width` YAML parameter to allow having full-width pages
-- Added `feed_show_excerpt` config setting to show/hide the post excerpts on the feed page
-- Added `feed_show_tags` config setting to show/hide the list of tags on post previews on the feed page
-- Added `share-title` YAML parameter to give control over the search engine/social media title
-- Added `last-updated` YAML parameter to show a "Last Updated on" date for blog posts
-- Added `before-content` and `after-content` YAML parameters that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
-- Added `head-extra` YAML parameter which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
-- Added `site-js` config setting to provide JavaScript files that are used on all pages in the site
-
-#### New features and improvements
-
-- Improved the `footer-extra` YAML parameter to support multiple files instead of only a single file
-- Added automatic navbar color detection (#702)
-- When `nav-short` is turned on, the avatar will also be shorter
-- Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background for accessibility reasons
-- Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files
-- Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
-- Added alt text to all images for better accessibility
-- Made thumbnail images square instead of circles, as users reported that circles cut off important parts of images
-
-#### Bug fixes
-
-- Fixed rendering issues with `nav-short` parameter that caused the body of the page to start too low
-- Fixed some CSS styles that broke during the bootstrap 4 migration (#716)
-
-#### Library upgrades
-
-- Upgraded kramdown to version 2.3.0 to fix security issues
-- Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
+# Changelog
 
+## [1.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.3.0...awesome-jekyll-theme/v1.3.1) (2025-06-22)
 
-## v4.1.0 (2020-08-08)
 
-- Added Open Graph `site_name` meta field to pages automatically
-- Added `text-col` config setting  for main text color (#694)
-- Added `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
-- Added `mobile-theme-col` config setting to allow a mobile theme colour (#692)
-- Added `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
-- Added YAML parameter `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
+### Bug Fixes
 
-## v4.0.1 (2020-07-13)
+* Generate a different image for each post card ([#34](https://github.com/a-chacon/awesome-jekyll-theme/issues/34)) ([50729dc](https://github.com/a-chacon/awesome-jekyll-theme/commit/50729dced03afeb555aca00e5f53ad9f5bba5561))
+* The cover page img tag is emitted only if image front matter is set ([#29](https://github.com/a-chacon/awesome-jekyll-theme/issues/29)) ([8d1446b](https://github.com/a-chacon/awesome-jekyll-theme/commit/8d1446bea66bdbc254a57ef3a34c121abd26ae5c))
 
-- Fixed staticman comments UI that was broken since the migration to bootstrap 4
+## [1.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.1...awesome-jekyll-theme/v1.3.0) (2025-06-21)
 
-## v4.0.0 (2020-07-12)
 
-- **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
-- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
-- Cover image will automatically be used as thumbnail if none is provided
-- Image to share on social media will use the cover image or thumbnail if none is provided
-- All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
-- Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Added social network links: Mastodon (#646), Google Scholar, ORCID (#670)
-- Added support for sharing pages on new social network: VK (#657)
-- Use Open Graph type 'article' for blog posts (#669)
-- Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
-- Made post images in the feed page smaller on smaller devices
-- Fixed jQuery version in staticman (#671)
+### Features
 
-## v3.0.0 (2020-05-07)
+* Include threads and linkedin as contact channels ([#31](https://github.com/a-chacon/awesome-jekyll-theme/issues/31)) ([dc3cb3f](https://github.com/a-chacon/awesome-jekyll-theme/commit/dc3cb3f7177089aa99ce88fb6a29dbcac6c55827))
+* Update the page layout to show content in the same style as the post layout ([#27](https://github.com/a-chacon/awesome-jekyll-theme/issues/27)) ([f844ec5](https://github.com/a-chacon/awesome-jekyll-theme/commit/f844ec558aa556ccf6b8b4282bd5db01243b7fd4))
 
-- **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
-- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
-- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
-- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
-- Added `navbar-border-col` setting in the config file
-- Added accessibility features where possible
-- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
-- Rewrote and simplified some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
-- Removed most of the sample posts so that users only have two sample posts to learn from
-- Improvements to the README instructions
 
-## v2.3.0 (2020-04-29)
+### Bug Fixes
 
-- Added YAML parameter `footer-extra` for including custom content in the footer
-- Fixed issue: linking to a specific part of a page resulted in scrolling too far (#69)
-- Added YAML parameter `nav-short` to have navbar permanently collapsed
-- Added social network link: Calendly
-- Fixed bug where RSS link in footer was showing even when turned off
+* grammar and typo in english localization string for contact_me ([#30](https://github.com/a-chacon/awesome-jekyll-theme/issues/30)) ([876e712](https://github.com/a-chacon/awesome-jekyll-theme/commit/876e712d89fdc1a62693ff74880d4ce4bec4a997))
 
-## v2.2.0 (2020-04-27)
+## [1.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.0...awesome-jekyll-theme/v1.2.1) (2025-01-31)
 
-- Added social network link: Telegram (#625) (thanks @mashed-potatoes)
-- Moved the demo site to an independent URL: https://beautifuljekyll.com
-- Major documentation overhaul and cleanup of old files
-- Fixed a few bugs from the remote_theme migration
 
-## v2.0.0 (2020-04-26)
+### Bug Fixes
 
-- Beautiful-Jekyll v2.0.0 available as an official Ruby gem
-- Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
-- Consolidated the demo site, the ruby gem, and the master branch into one
-- Added a `home` layout and used it in the index page
-- Added readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
-- Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
-- Added support for configuring lang attribute on `html` tag (#608) (thanks @skalee)
-- Added ability to disable round logo (thanks @gpotter2)
-- Added support for Utterances comments (#596) (thanks @colynn)
-- Removed 'just-comments' as it's getting killed at the end of the year
-- Upgraded font-awesome to 5.12.1 (#587) (thanks @cketti)
+* update deploy action ([8ee9af6](https://github.com/a-chacon/awesome-jekyll-theme/commit/8ee9af671c15065f0cabab4db805c0d147fce6dd))
 
-## Prior to 2020
+## [1.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.1.0...awesome-jekyll-theme/v1.2.0) (2024-09-23)
 
-**2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
 
-**2018-10-19** Move Google Analytics to the head (#419) (thanks @jpvicari)
+### Features
 
-**2018-06-08** Add support for Facebook comments (#350) (thanks @npes87184)
+* add rss icon if plugin jekyll-feed is enabled ([9660642](https://github.com/a-chacon/awesome-jekyll-theme/commit/9660642a7a4dd661102782e8aa7a21a3c54f387a))
 
-**2018-02-22** Automatically generate sitemap (#323) (thanks @JosemyDuarte)
+## [1.1.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.1...awesome-jekyll-theme/v1.1.0) (2024-09-08)
 
-**2018-01-18** Add clickable tags to each post and a tags index page, works for GitHub sites (#307) (thanks @OCram85)
 
-**2018-01-14** Redo Dockerfile (#302) (thanks @jennydaman)
+### Features
 
-**2018-01-06** More color personalization options (#297 and #299) (thanks @jennydaman)
+* add share message and buttons on the top of posts ([a873c8d](https://github.com/a-chacon/awesome-jekyll-theme/commit/a873c8d021e0587a12d024c3a282a9c7e4e68c66))
 
-**2018-01-05** Abstract the social networks logic (thanks @OCram85)
+## [1.0.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.0...awesome-jekyll-theme/v1.0.1) (2024-09-01)
 
-**2018-01-03** Avatar image no longer causes a ghost click (thanks @alefi87)
 
-**2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
+### Bug Fixes
 
-**2017-09-04** Ability to change colour/image of navbar/footer/body
+* blog and project section layout  bug ([#21](https://github.com/a-chacon/awesome-jekyll-theme/issues/21)) ([9e2c4af](https://github.com/a-chacon/awesome-jekyll-theme/commit/9e2c4af64fad819cf2dfbddd14b325f654d4e792))
 
-**2017-08-17** Add support for notification, error, and warning boxes in markdown (#227) (thanks @OCram85)
+## [1.0.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.1...awesome-jekyll-theme/v1.0.0) (2024-08-15)
 
-**2017-08-12** Add social buttons for twitch, yelp, and steam (#234) (thanks @TheRealBenForce)
 
-**2017-03-30** Make the footer contact links friendly for screen readers (thanks @eugenius1)
+### ⚠ BREAKING CHANGES
 
-**2017-03-30** Started a CHANGELOG file (thanks @eugenius1)
+* rrss is named contact_channels.
 
-**2017-01-28** Add Subresource Integrity (SRI) support (#164) (thanks @tony-ho)
+### Code Refactoring
 
-**2017-01-09** Add Google Tag Manager Integration (#157) (thanks @csarigoz)
+* rrss is named contact_channels.  ([ea99927](https://github.com/a-chacon/awesome-jekyll-theme/commit/ea999276e778f29ad693a6f1adc30e09484ff2dc))
 
-**2017-01-06** Add options to configure HTML document title (#154) (thanks @tony-ho)
+## [0.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.0...awesome-jekyll-theme/v0.3.1) (2024-08-15)
 
-**2016-12-25** Allow dynamic images on each blog post (#143) (thanks @bbritten)
 
-**2016-12-15** Support `title-img` config param to have image in the navbar instead of text
+### Bug Fixes
 
-**2016-12-08** Add support for phone numbers in footer; fix #136
+* blog category links was not using the baseurl variable ([11fe344](https://github.com/a-chacon/awesome-jekyll-theme/commit/11fe344311d7fd20d937bc7005335d9ae9270cc5))
 
-**2016-12-06** Update gemfile (#134) (thanks @stephentuso)
+## [0.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.2...awesome-jekyll-theme/v0.3.0) (2024-08-12)
 
-**2016-10-09** Add Docker deployment (#114) (thanks @mangar)
 
-**2016-08-06** Add social share buttons for posts (thanks @rtlee9)
+### Features
 
-**2016-07-29** Add CSS styling to code chunks
+* add microinteractions, bounce links, type writer effect option, scroll down by sections. ([d39536f](https://github.com/a-chacon/awesome-jekyll-theme/commit/d39536f6eeddbaa3ae52085076f2918c47718e05))
+* build assets ([53e47a7](https://github.com/a-chacon/awesome-jekyll-theme/commit/53e47a7b504c2bbf88fe9f85c068b09c3abacc18))
 
-**2016-07-27** Add clickable tags that lead to a tag page (doesn't work for GitHub hosted sites) (thanks @epwalsh)
 
-**2016-07-21** Add support for twitter cards (sharing on Twitter will be better); fixes #70
+### Bug Fixes
 
-**2016-03-18** Support full-width images in page headers; fixes #37
+* **home:** link to more posts ([1e620ec](https://github.com/a-chacon/awesome-jekyll-theme/commit/1e620ec774629f307a858bc29c13c0ad0a8fef6c))
 
-**2016-03-18** Support menus in navigation bar
+## [0.2.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.1...awesome-jekyll-theme/v0.2.2) (2024-08-12)
 
-**2016-02-07** Avatar is now conditional (thanks @hristoyankov)
 
-**2016-02-02** Migrate (forced to...) to jekyll 3
+### Bug Fixes
 
-**2016-01-22** Make sure not to include JQuery twice, fixes #29
+* got to blog only if one page is created with the template blog. ([d9675ae](https://github.com/a-chacon/awesome-jekyll-theme/commit/d9675ae8da8aabdf27773f0ae15f7a2f7abb1a03))
+* set a default image to blog posts ([ddc0623](https://github.com/a-chacon/awesome-jekyll-theme/commit/ddc06238f0ad9de92f0ce59048c327062a1cc442))
 
-**2015-11-19** Support external links in navigation bar; fixes #3
 
-... Many small changes because the site was in its infancy
+### Reverts
 
-**2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+* remove step added for modify _config on releasing. ([87fad60](https://github.com/a-chacon/awesome-jekyll-theme/commit/87fad609c4a49ca1dd7078ca59905c9f67ad3149))
 
+## [0.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.0...awesome-jekyll-theme/v0.2.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* **_config.yml:** comment rss section for gem release ([86429cf](https://github.com/a-chacon/awesome-jekyll-theme/commit/86429cfb7ef4efe3ca63f308a8beaa8138037072))
+
+## [0.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.3...awesome-jekyll-theme/v0.2.0) (2024-07-30)
+
+
+### Features
+
+* add rakefile ([654a135](https://github.com/a-chacon/awesome-jekyll-theme/commit/654a1351e354b67f3807f815789f8d6a37c9b40e))
+
+## [0.1.3](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.2...awesome-jekyll-theme/v0.1.3) (2024-07-30)
+
+
+### Bug Fixes
+
+* use oficial ruby publish workflow ([e3588fb](https://github.com/a-chacon/awesome-jekyll-theme/commit/e3588fb613607c5592a936ad676be42cecf8c794))
+
+## [0.1.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.1...awesome-jekyll-theme/v0.1.2) (2024-07-30)
+
+
+### Bug Fixes
+
+* use oficial ruby publish workflow ([88bd747](https://github.com/a-chacon/awesome-jekyll-theme/commit/88bd7479578889b11734091b81b9a2f84e412abe))
+
+## [0.1.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.0...awesome-jekyll-theme/v0.1.1) (2024-07-30)
+
+
+### Bug Fixes
+
+* add the rest of workflow for push gem ([a342e77](https://github.com/a-chacon/awesome-jekyll-theme/commit/a342e77fcffb2056d0ccbc90b2fe20a9822ecb51))
+
+## [0.1.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme-v0.0.4...awesome-jekyll-theme/v0.1.0) (2024-07-30)
+
+
+### Features
+
+* add category and tags to projects cards ([bb6f0f7](https://github.com/a-chacon/awesome-jekyll-theme/commit/bb6f0f7a60cf271e4efbcd915439bf26c12ae1f7))
+* add ruby version for deploy ([9ce9ce2](https://github.com/a-chacon/awesome-jekyll-theme/commit/9ce9ce2ad6088f17001911bf0021f19bdeb055b1))
+* advance in home page ([28b0189](https://github.com/a-chacon/awesome-jekyll-theme/commit/28b01893a1a9ccadb56d8c0af7144cf005dfcbba))
+* bump to 0.0.3 ([95ad18f](https://github.com/a-chacon/awesome-jekyll-theme/commit/95ad18f02865f04fac314ba9e36b83df1d7a4671))
+* implement release please ([8ca7210](https://github.com/a-chacon/awesome-jekyll-theme/commit/8ca7210e37c7bdf43dd44b5b48cadc2d1da2d047))
+* initial version ready ([47ada7f](https://github.com/a-chacon/awesome-jekyll-theme/commit/47ada7f7849741d5d550a4efc610a7aaef712522))
+* prepare example data ([88b9e99](https://github.com/a-chacon/awesome-jekyll-theme/commit/88b9e99871cdaa683f3ff4a3144f7b7a858497a7))
+* relativize urls ([351f33c](https://github.com/a-chacon/awesome-jekyll-theme/commit/351f33ce728ec4f700b621f756d4d0e1f31e1392))
+* user version.rb file ([64a37cb](https://github.com/a-chacon/awesome-jekyll-theme/commit/64a37cb3e6131771689df14005bd33447314eee6))
+* version 0.0.2 ([d540a9b](https://github.com/a-chacon/awesome-jekyll-theme/commit/d540a9bba54a5331adf5021588eb9e2afdaa27ee))
+
+
+### Bug Fixes
+
+* add font display ([4bdd6b9](https://github.com/a-chacon/awesome-jekyll-theme/commit/4bdd6b94d99cefbdb521b9386d57e3e6e0fc7c82))
+* blog post cards hover on image and tag position ([d18d8d4](https://github.com/a-chacon/awesome-jekyll-theme/commit/d18d8d4da6e8788b91611d9714a7a91dc55b3ffd))
+* page speed insights accesibility ([ae93e10](https://github.com/a-chacon/awesome-jekyll-theme/commit/ae93e10bedf8e0048666d144989f0de42ff3d2e2))
+* page speed insights, performance ([40dddcc](https://github.com/a-chacon/awesome-jekyll-theme/commit/40dddcc57494346ce81d1124a5d076be4f6b81cf))
+* page speed recomendations ([1065a36](https://github.com/a-chacon/awesome-jekyll-theme/commit/1065a361cf11bdb9ae61d5bbfb9e075150b6d100))
+* release please ([78eb375](https://github.com/a-chacon/awesome-jekyll-theme/commit/78eb37558f2a50402f052c91999fa95cf0dc89c4))
+* release please ([cf1cd0b](https://github.com/a-chacon/awesome-jekyll-theme/commit/cf1cd0b35a28b0c6f77c19dd0f8053d919a2340d))
+* some page speed insights ([34f569a](https://github.com/a-chacon/awesome-jekyll-theme/commit/34f569af86d7326a829be4e6cd496dd4bfc94149))
+* update default logo ([9c0a435](https://github.com/a-chacon/awesome-jekyll-theme/commit/9c0a435e38d997269992a2cbdeb352e18d9f159e))

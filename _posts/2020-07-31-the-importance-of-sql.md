@@ -1,24 +1,29 @@
 ---
 layout: post
+vimeoId: 
+title: Why SQL Is Still the Most Important Language for Aspiring Data Scientists
+image: "assets/posts/20200731/20200731.png"
 read_time: true
 show_date: true
-title: SQL versus Python, who wins?
-date: 2020-07-31 07:09
-img: posts/20200731/sql_id_resized.png
-tags:
-  [
-    post,
-    blog,
-    phd2datascience,
-    data science,
-    PhD,
-    python,
-    SQL,
-    programming language,
-  ]
+category: Product and SaaS
+description: SQL may not be trending like Python, but it's the essential language for manipulating data at scale. Learn why mastering SQL can supercharge your analytics career.
 author: Manfredi Miraula
-description: We explore the importance of SQL in today's developing jobs and languages and we make the point that SQL is the first language to learn to start your career in DataScience
+tags:
+  - sql vs python
+  - learn sql for data science
+  - is sql better than python
+  - data science beginner tools
+  - sql for analytics
+  - python or sql first
+  - sql stackoverflow trend
+  - most important language data science
+  - data manipulation with sql
+  - sql vs python salary
+  - sql tutorials for beginners
+
+
 ---
+
 
 I'm personally bombarded by articles and videos revolving around Python. Based on my experience however, SQL is the most fundamental tool that you will need from day one in any data role.
 

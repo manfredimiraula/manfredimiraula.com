@@ -1,24 +1,26 @@
 ---
 layout: post
-vimeoId: 672215033
+vimeoId: 
 read_time: true
 show_date: true
-title: "Java vs Python"
-date: 2023-02-28 18:30
-img: posts/20230215/header.png
-tags:
-  [
-    post,
-    blog,
-    continuous learning, 
-    software development, 
-    python, 
-    java
-  ]
-category: theory
+title: Java vs Python - Key Differences, Features & Use Cases Explained
+image: "/assets/posts/20230227/20230327.webp"
+category: Data Engineering
+description: Java or Python? Learn the differences in features, use cases, and how tech giants use each language. Discover which is best for your next software project.
 author: Manfredi Miraula
-description: "From a conversation with a fried, exploring the simple differences between Java and Python"
-cover-img: "/assets/img/posts/20230228/pythonvsjava_cover.png"
+tags:
+  - java vs python
+  - python vs java
+  - programming language comparison
+  - java features
+  - python features
+  - java use cases
+  - python use cases
+  - python for machine learning
+  - java for enterprise
+  - backend development languages
+  - python vs java performance
+  - best language for web development
 ---
 
 # Java vs. Python: A Comparison of Features and Use Cases

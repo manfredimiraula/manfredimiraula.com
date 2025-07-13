@@ -1,35 +1,27 @@
 ---
 layout: post
-vimeoId: 
+title: What is a Relational Database? A Beginner’s Guide to SQL & Data Management
+image: "assets/images/20230327.webp"
+category: Data Engineering
 read_time: true
 show_date: true
-title: "A Guide to Relational Databases: How They Work and When to Use Them"
-date: 2023-03-25 09:00
-img: 
-tags:
-  [
-    'Relational databases'
-  ,'Structured data'
-  ,'Primary key'
-  ,'Foreign key'
-  ,'SQL'
-  ,'Data management'
-  ,'Data integrity'
-  ,'Scalability'
-  ,'Flexibility'
-  ,'Security'
-  ,'CRM'
-  ,'ERP'
-  ,'Inventory management systems'
-  ,'Data analysis'
-  ,'Reporting    '
-  ,'analytics'
-  ]
-category: theory
+description: Learn how relational databases work, when to use them, and why they’re essential for structured data management. A clear guide for beginners and aspiring data professionals.
 author: Manfredi Miraula
-description: "A Guide to Relational Databases: How They Work and When to Use Them"
-cover-img: "/assets/img/posts/20230326/DALL·E 2023-03-23 19.38.38 - Show a monk inscribing an old book with a flow diagram of tables connecting one another in the style of a database diagram. Use the style of painter i.png"
+tags:
+  - relational database
+  - what is a relational database
+  - SQL for beginners
+  - database design
+  - structured data
+  - database management system
+  - relational database benefits
+  - primary key vs foreign key
+  - SQL tutorial
+  - data integrity
+  - data modeling
+  - business data management
 ---
+
 ## Introduction
 Relational databases have been the backbone of modern data management for decades. They are designed to store, organize, and retrieve large amounts of structured data efficiently. If you are new to databases, understanding the concept of relational databases can be overwhelming. In this guide, we will explain how they work, and when to use them.
 

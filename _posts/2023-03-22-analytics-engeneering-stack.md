@@ -3,28 +3,26 @@ layout: post
 vimeoId: 
 read_time: true
 show_date: true
-title: "The tech stack of an Analytics Engeineer"
-date: 2023-03-18 09:00
-img: 
-tags:
-  [
-    post,
-    blog,
-    continuous learning, 
-    career change, 
-    analytics engineering, 
-    pipeline, 
-    tech stack, 
-    dbt, 
-    technologies, 
-    programming, 
-    analytics
-  ]
-category: theory
+title: What Is Analytics Engineering? The Emerging Role Bridging Data & Insights
+image: "assets/posts/20230322/analytics-engineering-dbt.png"
+category: Data Engineering
+description: Discover analytics engineering—the rising field bridging data engineering and analytics. Learn what it is, why it matters, and how it supports scalable, accurate insights.
 author: Manfredi Miraula
-description: "What are the tools of Analytics Engineering?"
-cover-img: "/assets/img/posts/20230322/analytics-engineering-dbt.png"
+tags:
+  - analytics engineering
+  - what is analytics engineering
+  - analytics engineer role
+  - data engineering vs analytics engineering
+  - modern data stack
+  - ELT pipelines
+  - data transformation
+  - dbt
+  - scalable data pipelines
+  - data modeling
+  - data infrastructure
+  - emerging data roles
 ---
+
 I've recently [discussed](posts/2023-03-07-what-is-analytics-engineering.md) the notion of Analytics Engineering. But what are the tools that an Analytic Engineer must know to perform their duties? In this post, I will explore the must-haves for an Analytic Engineer.
 
 A very clear image depicting the Analytics Engineering data flow can be found on the [dbt website](https://www.getdbt.com/). 

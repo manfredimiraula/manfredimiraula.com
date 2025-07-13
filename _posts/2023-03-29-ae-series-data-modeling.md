@@ -1,33 +1,27 @@
 ---
 layout: post
-vimeoId: 
+title: Data Modeling Best Practices for Effective Analysis and Reporting
+image: "assets/images/20230329.webp"
 read_time: true
 show_date: true
-title: "Data Modeling: Enabling Effective Analysis and Reporting"
-date: 2023-03-29 08:00
-img: 
-tags:
-  [
-  'Data modeling'
-  ,'Effective analysis'
-  ,'Reporting'
-  ,'Conceptual representation'
-  ,'Database design'
-  ,'Entities'
-  ,'Attributes'
-  ,'Relationships'
-  ,'Business requirements'
-  ,'Normalize data'
-  ,'Naming conventions'
-  ,'Data types'
-  ,'Data definitions'
-  ,'Test and refine'
-  , 'Analytics engineering'
-  ]
-category: theory
+category: Analytics
+description: Learn the key components and best practices of data modeling to improve your data analysis and reporting. Discover how to design consistent, accessible, and business-aligned data models.
 author: Manfredi Miraula
-description: "Data Modeling: Enabling Effective Analysis and Reporting"
-cover-img: "/assets/img/posts/20230329/header.png"
+tags:
+  - data modeling 
+  - data modeling 
+  - best practices
+  - data model design
+  - effective data analysis
+  - data for reporting
+  - conceptual data modeling
+  - normalized data
+  - business intelligence
+  - data-driven decision making
+  - database design
+  - data entities and attributes
+  - data relationships
+  - organizing business data
 ---
 
 ## Introduction

@@ -1,25 +1,25 @@
 ---
 layout: post
-vimeoId: 672215033
+title: Why Data Engineering Is Critical for the Future of Business
+image: "assets/posts/20230215/20230215.webp"
 read_time: true
 show_date: true
-title: "The Importance of Data Engineering for the Future of Business."
-date: 2023-02-15 08:30
-img: posts/20230215/header.png
-tags:
-  [
-    post,
-    blog,
-    phd2datascience,
-    data engineering,
-    dataengineering,
-    PhD,
-    analytics,
-    continuous learning
-  ]
-category: theory
+category: Data Engineering
+description: Learn how data engineering powers modern business success—from cloud systems to data literacy and decision making. Discover why it’s one of tech’s fastest-growing careers.
 author: Manfredi Miraula
-description: "This article is the first of a series. I'm going to discuss the importance of Data Engineering"
+tags:
+  - data engineering
+  - future of data engineering
+  - importance of data engineering
+  - data-driven decision making
+  - cloud data infrastructure
+  - data engineering career
+  - role of data engineers
+  - big data strategy
+  - business data management
+  - data engineer jobs
+  - AWS data pipelines
+  - scalable data systems
 ---
 
 # Introduction

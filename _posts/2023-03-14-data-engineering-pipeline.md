@@ -1,24 +1,28 @@
 ---
 layout: post
-vimeoId: 
+title: What Is a Data Engineering Pipeline? Explained Like Super Mario
+image: "assets/posts/20230314/20230314.webp"
+category: Data Engineering
 read_time: true
 show_date: true
-title: "Key components of a Data Engineering pipeline"
-date: 2023-03-14 09:00
-img: 
-tags:
-  [
-    post,
-    blog,
-    continuous learning, 
-    career change, 
-    data engineering, 
-    pipeline
-  ]
-category: theory
+description: Discover how data pipelines work—from ingestion to serving—through a fun analogy with Super Mario Bros. Learn key tools, stages, and best practices in data engineering.
 author: Manfredi Miraula
-description: "How do you build a Data Engineering pipeline? These are the main components"
-cover-img: "assets/img/posts/20230314/mario_bros__plumbing_by_imaginatorvictor_db885s6-fullview.jpeg"
+tags:
+  - data engineering pipeline
+  - what is a data pipeline
+  - data ingestion
+  - data processing
+  - data storage
+  - data serving
+  - ETL pipeline
+  - Apache Kafka
+  - Apache Spark
+  - AWS Redshift
+  - Super Mario analogy
+  - data engineering for beginners
+  - modern data stack
+  - real-time data processing
+  - data lake vs warehouse
 ---
 When I think about data engineering pipelines, Super Mario Bros often comes to mind. For those who are not familiar with the video game, Mario is a plumber who is teleported to a fantasy world. To me, the role of data engineering is very much like the role of a plumber, only in the analytics world. Where a real plumber would deal with tubes, water flows, and use a wrench, in data engineering, you are working with data flows, data pipes, and code as your tool.
 
@@ -27,7 +31,7 @@ Let's abandon the parallelism with plumbing and define what a data engineering p
 ## Data Ingestion
 First, we want to centralize everything in one place. The first component of a data engineering pipeline is data ingestion. This involves extracting data from various sources, such as databases, APIs, or file systems, and moving it to a centralized location where it can be processed and analyzed. If we imagine our pipeline as a big funnel, this step represents the "mouth" of the funnel. As we get down to the end of the funnel, data is cleaned and reorganized, but at this stage, the data is as close as it can be to the original source.
 <centre>
-<img src="/assets/img/posts/20230314/funnel.jpeg"  alt="Data Engineering pipeline funnel (photo by Artem Podrez)" /> 
+<img src="/assets/posts/20230314/mario_bros__plumbing_by_imaginatorvictor_db885s6-fullview.jpeg"  alt="Data Engineering pipeline funnel (photo by Artem Podrez)" /> 
 </centre>
 
 Data ingestion is a critical step in the data engineering process because it sets the foundation for all downstream tasks.

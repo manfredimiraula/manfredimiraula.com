@@ -1,31 +1,26 @@
 ---
 layout: post
 vimeoId: 672215033
+title: Building Cryptovaluer - A Data-Driven Tool for Crypto Coin Analysis
+image: "assets/posts/20220131/20220131.webp"
 read_time: true
 show_date: true
-title: "Cryptovaluer. A tool to help you navigate crypto currency technical signals."
-date: 2022-01-31 13:30
-img: posts/20220131/header.jpg
-tags:
-  [
-    post,
-    blog,
-    phd2datascience,
-    data science,
-    datascience,
-    PhD,
-    python,
-    crypto,
-    cryptocurrency,
-    trading,
-    crypto trading,
-    investment,
-    visualization,
-    analytics,
-  ]
-category: theory
+category: Product and SaaS
+description: Follow the journey of building Cryptovaluer, a tool for analyzing active crypto coins using technical signals, time-series data, and data visualization. From MVP to machine learning.
 author: Manfredi Miraula
-description: "This article is the first of a series. I started working on a new project, Cryptovaluer, a tool to help me visualize cryptocurrencies and their technical signals. The scope of the project is a year long and I'm planning to use analytical tool to create a well rounded web app for crypto valuations using technical analysis."
+tags:
+  - crypto analysis tool
+  - crypto coin tracker
+  - cryptocurrency dashboard
+  - crypto coin momentum analysis
+  - build crypto app
+  - streamlit dashboard crypto
+  - machine learning crypto signals
+  - cryptocurrency data visualization
+  - technical indicators crypto
+  - crypto trading signals
+  - crypto investing tool
+  - time series analysis crypto
 ---
 
 What would you do if you had tool that could decrease the time spent trying to understand the patterns and behaviors of currently active crypto coins? Imagine an app that supports your crypto coin analysis, that’s what I’m building.
@@ -44,7 +39,7 @@ It is known that, the best tool and apps are those created to serve a need, such
 
 I imagine the projects developping into three major areas.
 
-![Cryptovaluer diagram](/assets/img/posts/20220131/cryptovaluer_diagram.jpg)
+![Cryptovaluer diagram](/assets/posts/20220131/cryptovaluer_diagram.jpg)
 
 # The goal
 

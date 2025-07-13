@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- Navbar -->
+{% include navbar.html %}
+
+<!-- Hero Banner Section -->
+<section class="pt-20">
+  <div class="md:h-[250px] lg:h-[300px] relative overflow-hidden">
+    <img 
+      src="{{ site.baseurl }}/assets/images/hero.jpg" 
+      alt="Hero Banner" 
+      class="w-full h-full object-cover"
+    />
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="mt-16 md:mt-24">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-slate-200 mb-6">About</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-6 items-center">
+      <!-- Text Content -->
+      <div class="md:pr-8">
+        <div class="prose dark:prose-invert max-w-none">
+          <p>Dr. Manfredi Miraula is a Data & AI Engineer with a decade-long track record in building robust data platforms and AI-powered solutions across startups, scale-ups, and global enterprises. He is a freelance senior engineer and technical lead, currently collaborating with organizations of differente sizes, from scale-ups to global enterprises, to deliver intelligent systems at scale.</p>
+          
+          <p>With a background that bridges advanced academic research and real-world systems engineering, Dr. Miraula has developed production-grade pipelines supporting Analytics and AI use cases, built LLM-driven applications for document intelligence and QA automation, and designed scalable ETL architectures on Azure, GCP, and AWS. His academic foundation includes a joint PhD in Chemistry and multiple magna cum laude degrees in Biotechnology, reflecting his unique blend of scientific rigor and engineering pragmatism.</p>
+          
+          <p>Manfredi's mission is to make intelligent systems not only powerful, but useful—by combining modern AI with resilient backend infrastructure. On this blog, he shares his learnings from the field, reflections on building sustainable SaaS tools, and practical advice for fellow engineers navigating the evolving landscape of data and AI.</p>
+          
+          <p>Follow me on <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Twitter (@)</a> and <a href="https://www.linkedin.com/in/manfremiraula/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Linkedin</a>.</p>
+        </div>
+      </div>
+      
+      <!-- Photo -->
+      <div class="flex justify-center">
+        <div class="rounded overflow-hidden max-w-sm">
+          <img 
+            src="{{ site.baseurl }}/assets/images/mm.jpg" 
+            alt="Manfredi Miraula" 
+            class="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Companies Section -->
+

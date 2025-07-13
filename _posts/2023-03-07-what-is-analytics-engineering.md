@@ -3,23 +3,26 @@ layout: post
 vimeoId: 
 read_time: true
 show_date: true
-title: "Analytic Engineering what?"
-date: 2023-03-07 09:00
-img: 
-tags:
-  [
-    post,
-    blog,
-    continuous learning, 
-    career change, 
-    data engineering, 
-    analytics engineering
-  ]
-category: theory
+title: What Is Analytics Engineering? The Emerging Role Bridging Data & Insights
+image: "assets/posts/20230322/20230322.webp"
+category: Data Engineering
+description: Discover analytics engineering—the rising field bridging data engineering and analytics. Learn what it is, why it matters, and how it supports scalable, accurate insights.
 author: Manfredi Miraula
-description: "What is Analytics Engineering? And why is this different from Data Engineering?"
-cover-img: ""
+tags:
+  - analytics engineering
+  - what is analytics engineering
+  - analytics engineer role
+  - data engineering vs analytics engineering
+  - modern data stack
+  - ELT pipelines
+  - data transformation
+  - dbt
+  - scalable data pipelines
+  - data modeling
+  - data infrastructure
+  - emerging data roles
 ---
+
 In the past year I have gained experience in a relatively new field that sits between Data Analytics (DA) and Data Engineering (DE). The term "analytics engineering" is gaining more and more attention and, in my opinion, is set to become an important branch of the analytics field. But what exactly is analytics engineering, and why is it important? In this blog post, we'll dive into the world of analytics engineering, exploring its definition, importance, and applications. 
 
 ## What is Analytics Engineering?

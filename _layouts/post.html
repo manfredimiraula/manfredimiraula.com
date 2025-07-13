@@ -1,82 +1,59 @@
 ---
-layout: base
+layout: default
 ---
 
-{% include header.html type="post" %}
-
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
-
-      {% if page.gh-repo %}
-        {% assign gh_split =  page.gh-repo | split:'/'  %}
-        {% assign gh_user =  gh_split[0]  %}
-        {% assign gh_repo =  gh_split[1]  %}
-
-        <div id="header-gh-btns">
-          {% if page.gh-badge.size > 0 %}
-            {% for badge in page.gh-badge %}
-              {% case badge %}
-                {% when 'star'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'watch'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'fork'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'follow'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
-              {% endcase %}
-            {% endfor %}
-          {% endif %}
-        </div>
-      {% endif %}
-
-      {% if page.before-content %}
-        <div class="before-content">
-          {% for file in page.before-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
-
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          <span>Tags:</span>
-          {% for tag in page.tags %}
-            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      {% if page.after-content %}
-        <div class="after-content">
-          {% for file in page.after-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
-
-      <ul class="pagination blog-pager">
-        {% if page.previous.url %}
-        <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
-      {% include comments.html %}
+<link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
+<div class="container mx-auto">
+  <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
+    <div class="pb-4">
+      <a href="{{site.url}}/category/{{page.categories[0] | replace: ' ', '-' | downcase}}"
+        class="no-underline font-mulish text-sm hover:text-sky-400 text-gray-500">
+        {{ page.categories[0] | upcase }}
+      </a>
     </div>
+
+    <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
+
+    <div class="flex flex-col md:flex-row text-sm font-mulish justify-between items-center">
+      <div class="flex">
+        <p>{{ page.author }}</p>
+        <p class="px-2">•</p>
+        <p>{{ page.date | date: "%-d %B %Y" }}</p>
+        <p class="px-2">•</p>
+        <p>
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} mins {% endif %} </p>
+      </div>
+      <div>
+        {% include sharing.html %}
+      </div>
+    </div>
+
+    {% if page.image %}
+    <img class="w-full" src="{{page.image | relative_url}}" alt="{{page.title}}">
+    {% endif %}
+
+    <div class="my-6">
+      {{content}}
+    </div>
+
+    <div class="mx-auto py-8">
+      <p class="text-center font-extrabold italic">
+        {{ site.data[site.active_lang].strings.post.share | default:
+        site.data['en'].strings.post.share}}
+      </p>
+      {% include sharing.html %}
+    </div>
+
+    <div class="font-mulish flex justify-center mb-10">
+      {% if page.previous.url %}
+      <a class="pr-2" href="{{page.previous.url | relative_url}}">&laquo; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="pl-2" href="{{page.next.url | relative_url}}">{{ page.next.title }} &raquo;</a>
+      {% endif %}
+    </div>
+
+    {% include comment_system.html %}
   </div>
 </div>
