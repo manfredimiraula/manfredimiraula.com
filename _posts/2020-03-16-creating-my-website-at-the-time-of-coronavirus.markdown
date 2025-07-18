@@ -1,15 +1,25 @@
 ---
 layout: post
+vimeoId: 
+title: Building a Personal Website During Lockdown with Jekyll
+image: "assets/posts/20200316/20200316.webp"
 read_time: true
 show_date: true
-title: Creating my website at the time of Coronavirus
-date: 2020-03-16 13:32:20 -0600
-description: First Blog post on how to create a Jekyll based blog
-img: posts/20200316/hazard-zone.jpg
-tags: [post, personal, blog, phd2datascience, data science]
+category: Personal
+description: A reflection on life during COVID-19 lockdown and how it led to creating a personal static site using GitHub Pages and Jekyll. A beginner's story.
 author: Manfredi Miraula
+tags:
+  - jekyll blog first post
+  - github pages website tutorial
+  - lockdown personal project
+  - start static site pandemic
+  - jekyll for beginners
+  - personal website jekyll
+  - first blog post pandemic
+  - coronavirus side project
+  - beginner jekyll tutorial
+  - markdown examples jekyll
 
-mathjax: yes
 ---
 
 ## Make good use of a pandemic world lock down.

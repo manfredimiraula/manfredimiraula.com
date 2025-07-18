@@ -1,14 +1,27 @@
 ---
 layout: post
+vimeoId: 
+title: How to Build a Static Website with Jekyll - A Beginner's Guide
+image: "assets/posts/20200318/20200318.webp"
 read_time: true
 show_date: true
-title: Create a Jekyll-based static website from scratch Part I
-date: 2020-03-18 13:32:20 -0600
-description: Tutorial, how to build a website using Jekyll from scratch
-img: posts/20200318//jekyll.png
-tags: [front-end, jekyll, static-website, web-development, programming]
+category: Web Development
+description: Learn how to build and configure a static website using Jekyll. Covers setup, config.yml customization, plugins, and local testing for Mac users.
 author: Manfredi Miraula
+tags:
+  - jekyll tutorial
+  - jekyll static site guide
+  - build website with jekyll
+  - jekyll config.yml explained
+  - how to install jekyll macos
+  - create personal site github pages
+  - jekyll sass autoprefixer
+  - jekyll folder structure
+  - beginner jekyll guide
+  - jekyll gemfile configuration
+
 ---
+
 
 I've imagined this tutorial as a series of posts, to share my experience in building a static website based on Jekyll. I hope this will be helpful to help you getting started in building your own website based on Jekyll.
 

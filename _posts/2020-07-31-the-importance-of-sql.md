@@ -5,7 +5,7 @@ title: Why SQL Is Still the Most Important Language for Aspiring Data Scientists
 image: "assets/posts/20200731/20200731.png"
 read_time: true
 show_date: true
-category: Product and SaaS
+category: Data Science
 description: SQL may not be trending like Python, but it's the essential language for manipulating data at scale. Learn why mastering SQL can supercharge your analytics career.
 author: Manfredi Miraula
 tags:

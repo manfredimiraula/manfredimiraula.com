@@ -5,7 +5,7 @@ title: How to Set Up a Local PostgreSQL Database for Your First SQL ETL Project
 image: "assets/posts/20200928/20200928.webp"
 read_time: true
 show_date: true
-category: Product and SaaS
+category: Data Science
 description: Tired of cleaning data in Python? Learn how to set up PostgreSQL locally, build your own SQL database, and streamline your ETL pipelines like a real data engineer.
 author: Manfredi Miraula
 tags:

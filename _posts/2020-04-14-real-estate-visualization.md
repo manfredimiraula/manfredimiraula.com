@@ -1,26 +1,26 @@
 ---
 layout: post
+vimeoId: 
+title: Exploring Irish Real Estate Trends with Python and Open Data
+image: "assets/posts/20200414/20200414.webp"
 read_time: true
 show_date: true
-title: Visualize Real Estate Market trends in Ireland
-date: 2020-04-14 09:45:20 -0600
-description: Naive approach to visualization using Matplotlib, plotly and bokeh
-img: posts/20200414/header.jpg
-tags:
-  [
-    Programming,
-    Learn,
-    data science,
-    data visualization,
-    visualization,
-    investment,
-    real estate,
-    bokeh,
-    plotly,
-  ]
+category: Data Science
+description: Discover how to analyze Irish property market trends using Pandas, Plotly, and Bokeh. Step-by-step with visualizations and open data from the Irish registry.
 author: Manfredi Miraula
-github: manfredimiraula/portfolio/tree/master/irish-real-estate
+tags:
+  - irish real estate market trends
+  - ireland property prices
+  - dublin housing data
+  - pandas data cleaning tutorial
+  - python data visualization
+  - matplotlib real estate analysis
+  - plotly bubble chart tutorial
+  - bokeh geographic maps python
+  - open data housing ireland
+  - real estate eda with python
 ---
+
 
 COVID-19 is a great opportunity to reflect on ourselves and to dedicate time and effort to things we normally cannot do during our normal busy lives. Hence, I decided to start writing my first Data Science related blog post.
 

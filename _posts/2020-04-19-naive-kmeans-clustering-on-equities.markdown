@@ -1,29 +1,29 @@
 ---
 layout: post
+vimeoId: 
+title: Why You Should Start Investing Now - Clustering Stocks with Machine Learning
+image: "assets/posts/20200419/20200419.webp"
 read_time: true
 show_date: true
-title: Naive clustering of different stocks
-date: 2020-04-19 09:45
-img: posts/20200419/header.jpg
-tags:
-  [
-    Programming,
-    Learn,
-    data science,
-    data visualization,
-    visualization,
-    investment,
-    real estate,
-    trading,
-    stocks,
-    machine learning,
-    equities,
-  ]
-category: technical
-githun: manfredimiraula/portfolio/tree/master/clustering-stocks
+category: Data Science
+description: Learn why investing early matters and explore how stock clustering with KMeans and Bollinger Bands can enhance your strategy. Data-driven, personal, actionable.
 author: Manfredi Miraula
-description: "KMeans clustering of different industry sector stocks to demonstrate correlation between stocks from different industry sectors"
+tags:
+  - why invest in stocks
+  - stock market investing for beginners
+  - ETF investing strategy
+  - dollar cost averaging explained
+  - financial market clustering
+  - stock clustering with python
+  - KMeans stock analysis
+  - machine learning for investing
+  - bollinger bands python
+  - tiingo api tutorial
+  - personal finance data science
+
+
 ---
+
 
 # Why investing in the financial market is important
 

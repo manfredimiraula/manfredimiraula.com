@@ -1,26 +1,30 @@
 ---
 layout: post
+vimeoId: 
+title: Clean Python Installation on Mac with iTerm2, Pyenv & Oh My Zsh
+image: "assets/posts/20200712/20200712.webp"
 read_time: true
 show_date: true
-title: Installing Python in less than 9999 steps!
-date: 2020-07-12 07:53:20 -0600
-description: We install Python and virtual environments, Jupyter Notebook, and we prettify iTerm. Basic tools for datascience
-img: posts/20200712/instapic.png
-tags:
-  [
-    post,
-    blog,
-    phd2datascience,
-    data science,
-    PhD,
-    python,
-    jupyter notebook,
-    iTerm2,
-    terminal,
-  ]
+category: Technical Guides
+description: Set up Python, pyenv, virtualenvwrapper, Jupyter, and a power terminal with iTerm2 and Oh My Zsh on a fresh MacOS. Follow this clean, no-error installation guide.
 author: Manfredi Miraula
-toc: yes # leave empty or erase for no TOC
+tags:
+  - python installation mac
+  - install python macos
+  - pyenv setup mac
+  - virtualenvwrapper mac
+  - iterm2 customization
+  - oh my zsh setup
+  - clean python install mac
+  - python zsh terminal
+  - powerlevel9k iterm2
+  - setup jupyter mac
+  - python virtual environment mac
+  - python development environment
+
+
 ---
+
 
 Yes, this is yet another Python installation guide. However, it is different from most as I verified the steps and it should run smoothly without errors when you have a clean OS installation. I've used MacOS Catalina freshly installed.
 
